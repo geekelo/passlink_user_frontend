@@ -1,0 +1,36 @@
+.navsection {
+  display: flex;
+  background-color: rgb(226, 192, 0);
+  padding: 1rem 1.5rem;
+}
+
+.logoSection {
+  display: flex;
+  flex: 20%;
+}
+
+.logo {
+  width: 100%;
+}
+
+.menuIcons {
+  display: none;
+}
+
+.menuSection {
+  display: flex;
+  flex: 90%;
+  justify-content: end;
+}
+
+.menuItemsSection {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menuLinks {
+  text-decoration: none;
+  color: #fff;
+}
+
