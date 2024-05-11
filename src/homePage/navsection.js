@@ -12,13 +12,12 @@ function NavSection() {
         <p className="openHamburger menuIcons">Mobile icon</p>
         <p className="closeHamburger menuIcons">Close icon</p>
         <section className="menuItemsSection">
-          <p>
-            <a href="v.com" className="menuLinks">
-              <span>Registered Events</span>
-              &nbsp;
-              <i className="material-icons">event_available</i>
-            </a>
-          </p>
+          <a href="v.com" className="menuLinks">
+            <span className="registered-events">Registered Events</span>
+            &nbsp;
+            <span className="registered-events">Registered Events</span>
+            <i className="material-icons registered-events-icon">event_available</i>
+          </a>
         </section>
       </div>
     </div>
