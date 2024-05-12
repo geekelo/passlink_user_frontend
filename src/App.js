@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import NavSection from './homePage/navsection';
+import NavSection from './homePage/Javascripts/navsection';
+import BodySection from './homePage/Javascripts/bodysection';
 
 function App() {
   return (
     <div className="App">
       <NavSection />
-      <p>Timer</p>
+      <BodySection />
     </div>
   );
 }

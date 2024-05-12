@@ -1,6 +1,6 @@
 import React from 'react';
-import '../stylesheets/homePage/navsection.css';
-import logo from '../assets/passlink.png';
+import '../stylesheets/navsection.css';
+import logo from '../../assets/passlink.png';
 
 function NavSection() {
   return (
@@ -15,7 +15,6 @@ function NavSection() {
           <a href="v.com" className="menuLinks">
             <span className="registered-events">Registered Events</span>
             &nbsp;
-            <span className="registered-events">Registered Events</span>
             <i className="material-icons registered-events-icon">event_available</i>
           </a>
         </section>
