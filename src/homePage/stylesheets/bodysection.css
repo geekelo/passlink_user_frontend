@@ -1,0 +1,6 @@
+.body-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 10vh;
+}
