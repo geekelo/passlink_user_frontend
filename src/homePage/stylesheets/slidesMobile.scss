@@ -1,0 +1,125 @@
+@media only screen and (max-width: 768px) {
+  .body-slide {
+     flex-direction: column;
+     width: 90%;
+     height: fit-content;
+     padding: 4rem 0 1rem 1rem;
+  }
+
+  .slide-content {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+    color: rgba(231, 231, 231, 0.812)
+  }
+
+  .btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+  
+  .btn a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.613);
+    border-bottom: 1px solid rgba(3, 3, 3, 0.839);
+    border-top: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 30px;
+    padding: 1px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+  }
+  
+  .btn:hover a {
+    letter-spacing: 3px;
+  }
+  
+  .btn:hover a::before {
+    transform: skewX(45deg) translate(200px);
+  }
+  
+  .btn:hover::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: rgb(226, 192, 0);
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+  }
+  
+  .btn::before /*lightup button*/ {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+  }
+  
+  .btn:hover::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: rgb(226, 192, 0);
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+  }
+  
+  .btn::after /*lightup button*/ {
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+  }
+  
+  .btn::before, /*chnage 1*/
+  .btn::after {
+    background: rgb(226, 192, 0);
+    box-shadow: 0 0 5px rgb(226, 192, 0),
+      0 0 15px rgb(226, 192, 0), 0 0 30px rgb(226, 192, 0),
+      0 0 60px rgb(226, 192, 0);
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .body-slide {
+    width: 90%;
+    height: fit-content;
+    // padding: 4rem 0 1rem 1rem;
+ }
+}

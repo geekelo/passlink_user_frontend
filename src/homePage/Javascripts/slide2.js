@@ -27,7 +27,12 @@ function SlideTwo() {
               <span>Send reminders to registered attendees</span>
             </p>
           </div>
-          <button className="btn" type="submit"><a href="v.com">FIND EVENTS</a></button>
+          <button className="btn" type="submit">
+            <a href="v.com">
+              <span>ADD EVENT &nbsp;</span>
+              <i className="material-icons">event</i>
+            </a>
+          </button>
         </div>
       </div>
       <div className="infographic-section">

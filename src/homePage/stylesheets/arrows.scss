@@ -1,8 +1,20 @@
 .arrow {
-  color: #b0b0b0;
+  color: rgba(176, 176, 176, 0.257);
   font-size: 1.5rem;
+  background-color: rgba(176, 176, 176, 0);
+  border: none;
 }
 
 .active-arrow {
   color: rgba(226, 192, 0, 0.839);
+  animation: arrowAnimation 0.8s linear infinite alternate; /* Add animation properties */
+}
+
+@keyframes arrowAnimation {
+  0% {
+    transform: translateX(-5px); /* Move left */
+  }
+  100% {
+    transform: translateX(5px); /* Move right */
+  }
 }
