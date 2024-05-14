@@ -29,7 +29,7 @@ function BodySection() {
 
   return (
     <div className="body-section">
-      <div>
+      <div className="arrow-section">
         <button type="button" className="arrow" onClick={prevSlide} aria-label="Previous Button"><MdArrowBack /></button>
         <button type="button" className="arrow active-arrow" onClick={nextSlide} aria-label="Next Button"><MdArrowForward /></button>
       </div>
