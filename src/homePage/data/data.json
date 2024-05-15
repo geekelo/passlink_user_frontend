@@ -20,6 +20,27 @@
           "content": "PassLink is a leading event management platform that offers a comprehensive suite of tools and services to help organizations plan, promote, and execute successful events. Our platform is designed to simplify the event planning process, enhance the attendee experience, and provide valuable insights to event organizers. With PassLink, you can create custom event websites, manage registrations, sell tickets, track attendance, and much more. Whether you are hosting a small gathering or a large conference, PassLink has the tools you need to make your event a success."
         }
       ]
+    },
+    "/contact": {
+      "title": "Contact",
+      "sections": [
+        {
+          "title": "Reach Developer",
+          "content": "eloghene-otiede@geekelo.com"
+        },
+        {
+          "title": "Request Features",
+          "content": "passlink@geekelo.com"
+        },
+        {
+          "title": "Request Developer services",
+          "content": "efuelight12@gmail.com"
+        },
+        {
+          "title": "Give Feedback",
+          "content": "passlink@geekelo.com"
+        }
+      ]
     }
   }
 }

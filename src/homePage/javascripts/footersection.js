@@ -41,7 +41,7 @@ function FooterSection() {
                 <NavLink to="/contact" className="links">Contact</NavLink>
               </li>
               <li>
-                <NavLink to="/request-features" className="links">
+                <NavLink to="/contact" className="links">
                   Request Features
                 </NavLink>
               </li>

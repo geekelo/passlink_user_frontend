@@ -8,11 +8,13 @@ import {
   faBullseye,
   faClipboardList,
   faCogs,
+  faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 import '../stylesheets/desktop/infosection.css';
 import '../stylesheets/mobile-tablets/infosectionMobile.css';
 import data from '../data/data.json';
 import InfoNav from './infonav';
+import CopyButton from './copybtn';
 
 function InfoSection({ location }) {
   const pageLocation = useLocation();
@@ -25,6 +27,11 @@ function InfoSection({ location }) {
     'Our Mission': faBullseye,
     'Our Values': faClipboardList,
     Description: faCogs,
+    'Reach Developer': faEnvelope,
+    'Request Features': faEnvelope,
+    'Request Developer services': faEnvelope,
+    'Give Feedback': faEnvelope,
+    Contact: faEnvelope,
   };
 
   const content = data.data[pathname];
@@ -43,7 +50,10 @@ function InfoSection({ location }) {
             &nbsp;
             {section.title}
           </h3>
-          <p className="section-content">{section.content}</p>
+          <p className="section-content">
+            {section.content}
+            <CopyButton textToCopy={section.content} />
+          </p>
         </div>
       ))}
     </div>
