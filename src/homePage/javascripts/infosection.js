@@ -10,6 +10,7 @@ import {
   faCogs,
 } from '@fortawesome/free-solid-svg-icons';
 import '../stylesheets/infosection.css';
+import '../stylesheets/infosectionMobile.css';
 import data from '../data/data.json';
 import InfoNav from './infonav';
 

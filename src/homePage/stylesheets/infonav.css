@@ -10,6 +10,7 @@
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
   background-color: rgb(224, 224, 224);
+  right: 10%;
 }
 
 .infonav-icons {
