@@ -5,6 +5,7 @@ import { faLinkedin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-
 import { faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import '../stylesheets/desktop/footersection.css';
 import '../stylesheets/mobile-tablets/footersectionMobile.css';
+import footerlogo from '../../assets/footerlogo.png';
 
 function FooterSection() {
   return (
@@ -37,20 +38,20 @@ function FooterSection() {
                 <NavLink to="/about" className="links">About</NavLink>
               </li>
               <li>
-                <a href="http://scanfcode.com/contact/" className="links">Contact Us</a>
+                <NavLink to="/contact" className="links">Contact</NavLink>
               </li>
               <li>
-                <a href="http://scanfcode.com/contribute-at-scanfcode/" className="links">
-                  Contribute
-                </a>
+                <NavLink to="/requestFeatures" className="links">
+                  Request Features
+                </NavLink>
               </li>
               <li>
-                <a href="http://scanfcode.com/privacy-policy/" className="links">
+                <NavLink to="/privacypolicy" className="links">
                   Privacy Policy
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="http://scanfcode.com/sitemap/" className="links">Sitemap</a>
+                <NavLink to="/sitemap" className="links">Sitemap</NavLink>
               </li>
             </ul>
           </div>
@@ -61,11 +62,14 @@ function FooterSection() {
       <div className="container">
         <div className="row">
           <div className="column-two">
-            <p className="copyright-text">
-              Copyright &copy; 2024 All Rights Reserved by &nbsp;
-              <a href="https://geekelo.com.ng">Eloghene Otiede</a>
-              .
-            </p>
+            <div>
+              <img src={footerlogo} className="footerlogo" alt="logo" />
+              <p className="copyright-text">
+                Copyright &copy; 2024 All Rights Reserved by &nbsp;
+                <a href="https://geekelo.com.ng">Eloghene Otiede</a>
+                .
+              </p>
+            </div>
           </div>
 
           <div className="column-two">
