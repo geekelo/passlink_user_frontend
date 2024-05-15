@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
-import '../stylesheets/footersection.css';
+import '../stylesheets/desktop/footersection.css';
+import '../stylesheets/mobile-tablets/footersectionMobile.css';
 
 function FooterSection() {
   return (
@@ -62,39 +63,42 @@ function FooterSection() {
           <div className="column-two">
             <p className="copyright-text">
               Copyright &copy; 2024 All Rights Reserved by &nbsp;
-              <a href="https://geekelo.com.ng">Geekelo</a>
+              <a href="https://geekelo.com.ng">Eloghene Otiede</a>
               .
             </p>
           </div>
 
           <div className="column-two">
-            <ul className="social-icons">
-              <li>
-                <a className="facebook" href="v.com" aria-label="LinkedIn">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-              </li>
-              <li>
-                <a className="Facebook" href="v.com" aria-label="Facebook">
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-              </li>
-              <li>
-                <a className="twitter" href="v.com" aria-label="Twitter">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </li>
-              <li>
-                <a className="linkedin" href="v.com" aria-label="LinkedIn">
-                  <FontAwesomeIcon icon={faGlobe} />
-                </a>
-              </li>
-              <li>
-                <a className="email" href="mailto:efuelight12@gmail.com" aria-label="Email">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </a>
-              </li>
-            </ul>
+            <div className="social-icons">
+              <p>Connect with Developer:</p>
+              <ul className="social-icons">
+                <li>
+                  <a className="facebook" href="v.com" aria-label="LinkedIn">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                </li>
+                <li>
+                  <a className="Facebook" href="v.com" aria-label="Facebook">
+                    <FontAwesomeIcon icon={faFacebook} />
+                  </a>
+                </li>
+                <li>
+                  <a className="twitter" href="v.com" aria-label="Twitter">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
+                </li>
+                <li>
+                  <a className="linkedin" href="v.com" aria-label="LinkedIn">
+                    <FontAwesomeIcon icon={faGlobe} />
+                  </a>
+                </li>
+                <li>
+                  <a className="email" href="mailto:efuelight12@gmail.com" aria-label="Email">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

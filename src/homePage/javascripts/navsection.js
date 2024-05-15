@@ -1,5 +1,6 @@
 import React from 'react';
-import '../stylesheets/navsection.css';
+import '../stylesheets/desktop/navsection.css';
+import '../stylesheets/mobile-tablets/navsectionMobile.css';
 import logo from '../../assets/passlink.png';
 
 function NavSection() {

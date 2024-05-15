@@ -9,8 +9,8 @@ import {
   faClipboardList,
   faCogs,
 } from '@fortawesome/free-solid-svg-icons';
-import '../stylesheets/infosection.css';
-import '../stylesheets/infosectionMobile.css';
+import '../stylesheets/desktop/infosection.css';
+import '../stylesheets/mobile-tablets/infosectionMobile.css';
 import data from '../data/data.json';
 import InfoNav from './infonav';
 

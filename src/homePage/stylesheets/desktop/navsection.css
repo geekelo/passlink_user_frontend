@@ -49,17 +49,3 @@
   transition-duration: 0.4s;
   transition-delay: 0.1s;
 }
-
-@media only screen and (max-width: 767px) {
-  .logoSection {
-    flex: 100%;
-  }
-
-  .registered-events {
-    display: none;
-  }
-
-  .registered-events-icon {
-    font-size: 2.5rem;
-  }
-}

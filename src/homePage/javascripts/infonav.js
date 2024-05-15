@@ -7,7 +7,7 @@ import {
   faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 import data from '../data/datalist.json';
-import '../stylesheets/infonav.css';
+import '../stylesheets/desktop/infonav.css';
 
 function InfoNav() {
   const openDropdown = () => {

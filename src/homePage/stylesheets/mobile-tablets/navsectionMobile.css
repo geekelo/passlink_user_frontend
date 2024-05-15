@@ -1,0 +1,13 @@
+@media only screen and (max-width: 767px) {
+  .logoSection {
+    flex: 100%;
+  }
+
+  .registered-events {
+    display: none;
+  }
+
+  .registered-events-icon {
+    font-size: 2.5rem;
+  }
+}

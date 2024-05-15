@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { MdArrowBack, MdArrowForward } from 'react-icons/md';
-import '../stylesheets/bodysection.css';
-import '../stylesheets/slides.scss';
-import '../stylesheets/slidesMobile.scss';
-import '../stylesheets/arrows.scss';
+import '../stylesheets/desktop/bodysection.css';
+import '../stylesheets/desktop/slides.scss';
+import '../stylesheets/mobile-tablets/slidesMobile.scss';
+import '../stylesheets/desktop/arrows.scss';
 import SlideOne from './slide1';
 import SlideTwo from './slide2';
 
