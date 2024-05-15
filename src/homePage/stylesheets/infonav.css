@@ -40,3 +40,17 @@
 .infonav-links.active {
   background-color: #131313;
 }
+
+.show {
+  display: flex;
+  transition-property: display;
+  transition-duration: 2s;
+  transition-delay: 1s;
+}
+
+.hide {
+  display: none;
+  transition-property: display;
+  transition-duration: 2s;
+  transition-delay: 0.9s;
+}
