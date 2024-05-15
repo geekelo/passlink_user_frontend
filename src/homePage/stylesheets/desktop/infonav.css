@@ -28,6 +28,7 @@
   color: #131313;
   padding: 0.5rem 1.5rem;
   background-color: rgb(197, 168, 1);
+  border-bottom: 1px solid #13131349;
 }
 
 .infonav-links:hover {

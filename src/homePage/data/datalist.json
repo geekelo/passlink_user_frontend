@@ -9,6 +9,21 @@
       "id": 2,
       "url": "/contact",
       "title": "Contact"
+    },
+    {
+      "id": 3,
+      "url": "/request-features",
+      "title": "Request Features"
+    },
+    {
+      "id": 4,
+      "url": "/privacy-policy",
+      "title": "Privacy Policy"
+    },
+    {
+      "id": 5,
+      "url": "/sitemap",
+      "title": "Sitemap"
     }
   ]
 }
