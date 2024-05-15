@@ -1,0 +1,42 @@
+.infoNav-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dropdown-section {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(224, 224, 224);
+}
+
+.infonav-icons {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.infonav-btn {
+  background-color: rgba(19, 19, 19, 0);
+  border: none;
+}
+
+.infonav-links {
+  display: flex;
+  color: #131313;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(197, 168, 1);
+}
+
+.infonav-links:hover {
+  background-color: #131313;
+  color: hsl(0, 0%, 100%);
+  transition-property: background-color, color;
+  transition-duration: 0.4s;
+  transition-delay: 0.1s;
+}
+                                          
+.infonav-links.active {
+  background-color: #131313;
+}

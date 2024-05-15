@@ -7,7 +7,7 @@ import '../stylesheets/arrows.scss';
 import SlideOne from './slide1';
 import SlideTwo from './slide2';
 
-function BodySection() {
+function LandingSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
@@ -38,4 +38,4 @@ function BodySection() {
   );
 }
 
-export default BodySection;
+export default LandingSection;

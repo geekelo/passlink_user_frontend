@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
@@ -32,23 +33,23 @@ function FooterSection() {
             <h6>Quick Links</h6>
             <ul className="footer-links">
               <li>
-                <a href="http://scanfcode.com/about/">About Us</a>
+                <NavLink to="/about" className="links">About</NavLink>
               </li>
               <li>
-                <a href="http://scanfcode.com/contact/">Contact Us</a>
+                <a href="http://scanfcode.com/contact/" className="links">Contact Us</a>
               </li>
               <li>
-                <a href="http://scanfcode.com/contribute-at-scanfcode/">
+                <a href="http://scanfcode.com/contribute-at-scanfcode/" className="links">
                   Contribute
                 </a>
               </li>
               <li>
-                <a href="http://scanfcode.com/privacy-policy/">
+                <a href="http://scanfcode.com/privacy-policy/" className="links">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="http://scanfcode.com/sitemap/">Sitemap</a>
+                <a href="http://scanfcode.com/sitemap/" className="links">Sitemap</a>
               </li>
             </ul>
           </div>

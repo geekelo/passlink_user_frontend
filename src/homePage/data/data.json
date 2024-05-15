@@ -1,0 +1,26 @@
+{
+  "data": {
+    "/about": {
+      "title": "About",
+      "sections": [
+        {
+          "title": "Our Mission",
+          "content": "At PassLink, our mission is to revolutionize the event management industry by providing innovative solutions that streamline the registration process and enhance the overall event experience for guests and organizers. We are committed to delivering cutting-edge technology that simplifies event check-in procedures, maximizes efficiency, and empowers organizations to make data-driven decisions for success."
+        },
+        {
+          "title": "Our Vision",
+          "content": "We envision a future where event management is seamless, efficient, and data-driven. By leveraging the power of technology, we aim to transform the way events are organized and attended, making the process more convenient, engaging, and insightful for all stakeholders. Our vision is to set new standards of excellence in event management and create a world where every event is a success."
+        },
+        {
+          "title": "Our Values",
+          "content": "PassLink is built on a foundation of integrity, innovation, and excellence. We are committed to upholding the highest standards of ethics and professionalism in everything we do. We embrace creativity"
+        },
+        {
+          "title": "Description",
+          "content": "PassLink is a leading event management platform that offers a comprehensive suite of tools and services to help organizations plan, promote, and execute successful events. Our platform is designed to simplify the event planning process, enhance the attendee experience, and provide valuable insights to event organizers. With PassLink, you can create custom event websites, manage registrations, sell tickets, track attendance, and much more. Whether you are hosting a small gathering or a large conference, PassLink has the tools you need to make your event a success."
+        }
+      ]
+    }
+  }
+}
+  

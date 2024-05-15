@@ -2,29 +2,4 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  background:
-      conic-gradient(at 10% 50%,#0000 75%,#131313 0),
-      conic-gradient(at 10% 50%,#0000 75%,#131313 0) calc(1*31px) calc(3*31px),
-      conic-gradient(at 10% 50%,#0000 75%,#131313 0) calc(2*31px) calc(1*31px),
-      conic-gradient(at 10% 50%,#0000 75%,#131313 0) calc(3*31px) calc(4*31px),
-      conic-gradient(at 10% 50%,#0000 75%,#131313 0) calc(4*31px) calc(2*31px),
-      conic-gradient(at 50% 10%,#0000 75%,#131313 0) 0 calc(4*31px),
-      conic-gradient(at 50% 10%,#0000 75%,#131313 0) calc(1*31px) calc(2*31px),
-      conic-gradient(at 50% 10%,#0000 75%,#131313 0) calc(2*31px) 0,
-      conic-gradient(at 50% 10%,#0000 75%,#131313 0) calc(3*31px) calc(3*31px),
-      conic-gradient(at 50% 10%,#0000 75%,#131313 0) calc(4*31px) calc(1*31px),
-      #0f0f0f;
-background-size: 155px 155px;
-
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
