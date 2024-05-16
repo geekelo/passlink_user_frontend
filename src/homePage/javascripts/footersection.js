@@ -23,7 +23,7 @@ function FooterSection() {
           </div>
 
           <div className="column-one-text">
-            <h6>Organizations</h6>
+            <h6>Organizers</h6>
             <p className="text-justify">
               From tracking registered guests and attendance to analyzing data and
               generating insightful reports, PassLink empowers organizers to make
