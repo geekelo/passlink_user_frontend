@@ -41,6 +41,125 @@
           "content": "passlink@geekelo.com"
         }
       ]
+    },
+    "/privacy-policy": {
+      "title": "Privacy Policy",
+      "sections": [
+        {
+          "title": "Our Commitment to Privacy",
+          "content": "PassLink is committed to protecting your privacy. This Privacy Policy describes how PassLink collects, uses, and protects the personal information you provide while using our application."
+        },
+        {
+          "title": "Information We Collect",
+          "content": "We use your personal information to provide the services you request, such as account registration, event check-in, and communication with event organizer. We analyze usage data to understand how users interact with PassLink and to improve the functionality and user experience of the application. We may use your contact information to send you important updates, notifications, and promotional materials related to PassLink."
+        },
+        {
+          "title": "Data Security",
+          "content": "PassLink takes the security of your personal information seriously. We implement appropriate technical and organizational measures to protect your data against unauthorized access, disclosure, alteration, or destruction."
+        },
+        {
+          "title": "Data Sharing",
+          "content": "You have the right to access, update, or delete your personal information at any time. You may also opt out of receiving promotional communications from PassLink by following the instructions provided in the communication or by contacting us directly."
+        },
+        {
+          "title": "Changes to This Privacy Policy",
+          "content": "PassLink reserves the right to update or modify this Privacy Policy at any time. We will notify you of any changes by posting the revised Privacy Policy on our website or within the application."
+        },
+        {
+          "title": "Contact Us",
+          "content": "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us via email at the contact page."
+        }
+      ]
+    },
+    "/features": {
+      "title": "Features",
+      "sections": [
+        {
+          "title": "No Sign-up Required | Guests",
+          "content": "Register for events seamlessly without the need for creating accounts or filling out lengthy forms. Simply provide basic information and receive a unique passcode for quick event access."
+        },
+        {
+          "title": "Hassle-Free Check-In | Guests",
+          "content": "Receive personalized event recommendations based on your interests, preferences, and past attendance history."
+        },
+        {
+          "title": "Personalized Experience | Guests",
+          "content": "PassLink takes the security of your personal information seriously. We implement appropriate technical and organizational measures to protect your data against unauthorized access, disclosure, alteration, or destruction."
+        },
+        {
+          "title": "Real-Time Updates | Guests",
+          "content": "Stay informed with real-time event updates, schedule changes, and important announcements delivered directly to your mobile device."
+        },
+        {
+          "title": "Interactive Engagement | Guests",
+          "content": "Engage with event organizers, speakers, and fellow attendees through interactive features such as live polls, Q&A sessions, and networking opportunities."
+        },
+        {
+          "title": "Efficient Registration Management | Organizers",
+          "content": "Manage event registrations with ease, track attendee information, and generate customizable reports for insights into attendee demographics and preferences."
+        },
+        {
+          "title": "Seamless Check-In Process | Organizers",
+          "content": "Simplify event check-in with fast and efficient scanning of attendee passcodes, reducing wait times and ensuring a smooth entry process."
+        },
+        {
+          "title": "Customizable Event Pages | Organizers",
+          "content": "Create custom event pages with branded designs, logos, and messaging to showcase your organization's identity and attract attendees."
+        },
+        {
+          "title": "Engagement Analytics | Organizers",
+          "content": "Gain valuable insights into attendee engagement, session popularity, and audience feedback through comprehensive analytics and reporting tools."
+        },
+        {
+          "title": "Interactive Features | Organizers",
+          "content": "Enhance attendee engagement with interactive features such as live polls, surveys, and audience participation tools, fostering meaningful interactions and networking opportunities."
+        }
+      ]
+    },
+    "/faqs": {
+      "title": "Frequently Asked Questions",
+      "sections": [
+        {
+          "title": "How do I find events?",
+          "content": "You can find events by clicking the 'FIND EVENTS' button on first slide, on the home page."
+        },
+        {
+          "title": "What happens when I click on the 'FIND EVENTS' button?",
+          "content": "When you click on the 'FIND EVENTS' button, you will be taken to a page where you can search for events by organization, location, date, and category."
+        },
+        {
+          "title": "How do I register for an event?",
+          "content": "You can register for an event by clicking on the 'REGISTER' button on the event page and providing the required information."
+        },
+        {
+          "title": "How do I check in to an event?",
+          "content": "You can check in to an event by presenting your unique passcode at the event check-in page via unique link or scanning the passcode using the PassLink app."
+        },
+        {
+          "title": "How do find events I have registered for?",
+          "content": "You can find events you have registered for by clicking on the 'REGISTERED EVENTS' button on the home page and viewing your event history."
+        },
+        {
+          "title": "How do I create an event?",
+          "content": "By clicking on the 'CREATE EVENT' button on the home page, you can create an event by providing the required information and customizing the event page."
+        },
+        {
+          "title": "What happens when I click on the 'CREATE EVENT' button?",
+          "content": "When you click on the 'CREATE EVENT' button, you will be taken to a page where you can create a new event by providing event details, setting up registration, and customizing the event page."
+        },
+        {
+          "title": "How do I manage event registrations?",
+          "content": "You can manage event registrations by logging into your organizer account, viewing attendee information, and generating reports on registration data."
+        },
+        {
+          "title": "How do I track event attendance?",
+          "content": "You can track event attendance by scanning attendee passcodes at the event check-in page or viewing the attendance list in your organizer account."
+        },
+        {
+          "title": "How do I engage with attendees?",
+          "content": "You can engage with attendees by using interactive features such as live polls, surveys, and Q&A sessions during the event."
+        }
+      ]
     }
   }
 }

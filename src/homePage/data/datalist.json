@@ -12,8 +12,8 @@
     },
     {
       "id": 3,
-      "url": "/request-features",
-      "title": "Request Features"
+      "url": "/features",
+      "title": "Features"
     },
     {
       "id": 4,
@@ -22,8 +22,8 @@
     },
     {
       "id": 5,
-      "url": "/sitemap",
-      "title": "Sitemap"
+      "url": "/faqs",
+      "title": "FAQs | Help"
     }
   ]
 }

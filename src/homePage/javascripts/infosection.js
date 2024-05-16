@@ -9,6 +9,7 @@ import {
   faClipboardList,
   faCogs,
   faEnvelope,
+  faThumbsUp,
 } from '@fortawesome/free-solid-svg-icons';
 import '../stylesheets/desktop/infosection.css';
 import '../stylesheets/mobile-tablets/infosectionMobile.css';
@@ -22,6 +23,7 @@ function InfoSection({ location }) {
 
   // Define FontAwesome icons for each section
   const icons = {
+    default: faThumbsUp,
     About: faInfoCircle,
     'Our Vision': faEye,
     'Our Mission': faBullseye,
@@ -46,7 +48,7 @@ function InfoSection({ location }) {
       { content.sections.map((section) => (
         <div className="section" key={section.id}>
           <h3 className="section-title">
-            <FontAwesomeIcon icon={icons[section.title]} />
+            <FontAwesomeIcon icon={icons[section.title] || icons.default} />
             &nbsp;
             {section.title}
           </h3>

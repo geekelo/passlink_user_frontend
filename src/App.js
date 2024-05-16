@@ -15,6 +15,9 @@ function App() {
           <Route path="/" element={<LandingSection />} />
           <Route path="/about" element={<InfoSection />} />
           <Route path="/contact" element={<InfoSection />} />
+          <Route path="/privacy-policy" element={<InfoSection />} />
+          <Route path="/features" element={<InfoSection />} />
+          <Route path="/faqs" element={<InfoSection />} />
         </Routes>
         <FooterSection />
       </Router>
