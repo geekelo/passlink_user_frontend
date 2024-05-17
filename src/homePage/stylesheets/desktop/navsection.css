@@ -37,15 +37,12 @@
   font-style: normal;
   display: flex;
   align-items: center;
-  letter-spacing : 2px;
-}
-
-.menuLinks:hover{
-  letter-spacing : 4px;
-}
-
-.menuLinks {
+  letter-spacing: 2px;
   transition-property: letter-spacing;
   transition-duration: 0.4s;
   transition-delay: 0.1s;
+}
+
+.menuLinks:hover {
+  letter-spacing: 4px;
 }

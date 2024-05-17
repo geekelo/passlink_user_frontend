@@ -11,41 +11,42 @@
 
   --border-angle: 0turn;
   --main-bg: conic-gradient(
-    from var(--border-angle),
-    #434343,
-    #434343 5%,
-    #434343 60%,
-    #434343 95%
+      from var(--border-angle),
+      #434343,
+      #434343 5%,
+      #434343 60%,
+      #434343 95%
   );
 
   border: solid 1px transparent;
   border-radius: 2em;
   --gradient-border: conic-gradient(
-    from var(--border-angle),
-    transparent 0%,
-    #ffffff3a,
-    rgba(226, 192, 0, 0.26),
-    99%,
-    transparent
+      from var(--border-angle),
+      transparent 0%,
+      #ffffff3a,
+      rgba(226, 192, 0, 0.26),
+      99%,
+      transparent
   );
   background: var(--main-bg) padding-box, var(--gradient-border) border-box,
-    var(--main-bg) border-box;
+      var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 3s linear infinite;
   animation: fadeIn 3s;
-  @keyframes bg-spin {
-    to {
+}
+
+@keyframes bg-spin {
+  to {
       --border-angle: 1turn;
-    }
   }
 }
 
 @keyframes fadeIn {
   from {
-    opacity: 0.1;
+      opacity: 0.1;
   }
   to {
-    opacity: 1;
+      opacity: 1;
   }
 }
 
@@ -128,7 +129,7 @@
   font-size: 1rem;
   justify-content: center;
   align-items: center;
-  background: #333333;
+  background: #333;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.613);
   border-bottom: 1px solid rgba(3, 3, 3, 0.839);
   border-top: 1px solid rgba(0, 0, 0, 1);
@@ -156,17 +157,17 @@
   content: "";
   position: absolute;
   left: 50%;
-  transform: translatex(-50%);
+  transform: translateX(-50%);
   bottom: -5px;
   width: 30px;
   height: 10px;
   background: rgb(226, 192, 0);
   border-radius: 10px;
   transition: 0.5s;
-  transition-delay: 0.5;
+  transition-delay: 0.5s;
 }
 
-.btn:hover::before /*lightup button*/ {
+.btn:hover::before {
   bottom: 0;
   height: 50%;
   width: 80%;
@@ -177,27 +178,26 @@
   content: "";
   position: absolute;
   left: 50%;
-  transform: translatex(-50%);
+  transform: translateX(-50%);
   top: -5px;
   width: 30px;
   height: 10px;
   background: rgb(226, 192, 0);
   border-radius: 10px;
   transition: 0.5s;
-  transition-delay: 0.5;
+  transition-delay: 0.5s;
 }
 
-.btn:hover::after /*lightup button*/ {
+.btn:hover::after {
   top: 0;
   height: 50%;
   width: 80%;
   border-radius: 30px;
 }
 
-.btn::before, /*chnage 1*/
+.btn::before,
 .btn::after {
   background: rgb(226, 192, 0);
-  box-shadow: 0 0 5px rgb(226, 192, 0),
-    0 0 15px rgb(226, 192, 0), 0 0 30px rgb(226, 192, 0),
-    0 0 60px rgb(226, 192, 0);
+  box-shadow: 0 0 5px rgb(226, 192, 0), 0 0 15px rgb(226, 192, 0),
+      0 0 30px rgb(226, 192, 0), 0 0 60px rgb(226, 192, 0);
 }
