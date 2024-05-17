@@ -48,7 +48,7 @@ PassLink simplifies the event check-in process by leveraging modern web technolo
 **Real-time Updates:** The frontend receives the confirmation response from the backend and updates the user interface to reflect the attendee's check-in status in real-time.
 
 ## Live Demo & Presentation <a name="live-demo">
-[LIVE DEMO](https://passlink-user-frontend.onrender.com)
+[LIVE DEMO](passlink.geekelo.com.ng)
 
 <!-- Video Presentation -->
 ## Video Presentation <a name="video-presentation"></a>
