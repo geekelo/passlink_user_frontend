@@ -32,10 +32,20 @@
     var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 3s linear infinite;
+  animation: fadeIn 3s;
   @keyframes bg-spin {
     to {
       --border-angle: 1turn;
     }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
   }
 }
 
