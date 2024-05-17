@@ -9,8 +9,8 @@ import InfoSection from './homePage/javascripts/infosection';
 function App() {
   return (
     <div className="App">
-      <NavSection />
       <Router>
+        <NavSection />
         <Routes>
           <Route path="/" element={<LandingSection />} />
           <Route path="/about" element={<InfoSection />} />

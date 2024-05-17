@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../stylesheets/desktop/navsection.css';
 import '../stylesheets/mobile-tablets/navsectionMobile.css';
 import logo from '../../assets/passlink.png';
@@ -6,9 +7,9 @@ import logo from '../../assets/passlink.png';
 function NavSection() {
   return (
     <div className="navsection">
-      <div className="logoSection">
+      <NavLink to="/" className="logoSection">
         <img className="logo" src={logo} alt="logo" />
-      </div>
+      </NavLink>
       <div className="menuSection">
         <p className="openHamburger menuIcons">Mobile icon</p>
         <p className="closeHamburger menuIcons">Close icon</p>
