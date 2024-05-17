@@ -11,25 +11,25 @@
 
   --border-angle: 0turn;
   --main-bg: conic-gradient(
-      from var(--border-angle),
-      #434343,
-      #434343 5%,
-      #434343 60%,
-      #434343 95%
+    from var(--border-angle),
+    #434343,
+    #434343 5%,
+    #434343 60%,
+    #434343 95%
   );
 
   border: solid 1px transparent;
   border-radius: 2em;
   --gradient-border: conic-gradient(
-      from var(--border-angle),
-      transparent 0%,
-      #ffffff3a,
-      rgba(226, 192, 0, 0.26),
-      99%,
-      transparent
+    from var(--border-angle),
+    transparent 0%,
+    #ffffff3a,
+    rgba(226, 192, 0, 0.26),
+    99%,
+    transparent
   );
   background: var(--main-bg) padding-box, var(--gradient-border) border-box,
-      var(--main-bg) border-box;
+    var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 3s linear infinite;
   animation: fadeIn 3s;
@@ -37,16 +37,16 @@
 
 @keyframes bg-spin {
   to {
-      --border-angle: 1turn;
+    --border-angle: 1turn;
   }
 }
 
 @keyframes fadeIn {
   from {
-      opacity: 0.1;
+    opacity: 0.1;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -199,5 +199,5 @@
 .btn::after {
   background: rgb(226, 192, 0);
   box-shadow: 0 0 5px rgb(226, 192, 0), 0 0 15px rgb(226, 192, 0),
-      0 0 30px rgb(226, 192, 0), 0 0 60px rgb(226, 192, 0);
+    0 0 30px rgb(226, 192, 0), 0 0 60px rgb(226, 192, 0);
 }

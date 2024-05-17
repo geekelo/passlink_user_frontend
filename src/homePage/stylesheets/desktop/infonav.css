@@ -8,7 +8,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: rgb(224, 224, 224);
   right: 10%;
 }
@@ -38,7 +38,7 @@
   transition-duration: 0.4s;
   transition-delay: 0.1s;
 }
-                      
+
 .infonav-links.active {
   background-color: #131313;
 }

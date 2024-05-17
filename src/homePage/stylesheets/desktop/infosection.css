@@ -1,23 +1,29 @@
 .info-body {
-  background: 
-      conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0),
-      conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(1 * 32px) calc(3 * 32px),
-      conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(2 * 32px) calc(1 * 32px),
-      conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(3 * 32px) calc(4 * 32px),
-      conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(4 * 32px) calc(2 * 32px),
-      conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) 0 calc(4 * 32px),
-      conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(1 * 32px) calc(2 * 32px),
-      conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(2 * 32px) 0,
-      conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(3 * 32px) calc(3 * 32px),
-      conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(4 * 32px) calc(1 * 32px),
-      #fff;
+  background: conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0),
+    conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(1 * 32px)
+      calc(3 * 32px),
+    conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(2 * 32px)
+      calc(1 * 32px),
+    conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(3 * 32px)
+      calc(4 * 32px),
+    conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(4 * 32px)
+      calc(2 * 32px),
+    conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) 0 calc(4 * 32px),
+    conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(1 * 32px)
+      calc(2 * 32px),
+    conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(2 * 32px) 0,
+    conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(3 * 32px)
+      calc(3 * 32px),
+    conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(4 * 32px)
+      calc(1 * 32px),
+    #fff;
   background-size: 160px 160px;
 }
 
 .info-section {
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #0f0f0f;
   margin: auto;
   text-align: left;
@@ -28,32 +34,32 @@
   text-shadow: 0 1px 0 #000;
   --border-angle: 0turn;
   --main-bg: conic-gradient(
-      from var(--border-angle),
-      #434343,
-      #434343 5%,
-      #434343 60%,
-      #434343 95%
+    from var(--border-angle),
+    #434343,
+    #434343 5%,
+    #434343 60%,
+    #434343 95%
   );
 
   border: solid 1px transparent;
   border-radius: 2em;
   --gradient-border: conic-gradient(
-      from var(--border-angle),
-      transparent 0%,
-      #ffffff3a,
-      rgba(226, 192, 0, 0.26),
-      99%,
-      transparent
+    from var(--border-angle),
+    transparent 0%,
+    #ffffff3a,
+    rgba(226, 192, 0, 0.26),
+    99%,
+    transparent
   );
   background: var(--main-bg) padding-box, var(--gradient-border) border-box,
-      var(--main-bg) border-box;
+    var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 3s linear infinite;
 }
 
 @keyframes bg-spin {
   to {
-      --border-angle: 1turn;
+    --border-angle: 1turn;
   }
 }
 
