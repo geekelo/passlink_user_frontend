@@ -46,6 +46,10 @@
   display: block;
 }
 
+.footer-links.inline li {
+  display: inline-block;
+}
+
 .footer-links a {
   color: #737373;
   text-decoration: none;
@@ -56,10 +60,6 @@
 .footer-links a:hover {
   color: rgb(197, 168, 1);
   text-decoration: none;
-}
-
-.footer-links.inline li {
-  display: inline-block;
 }
 
 .site-footer h6 {
