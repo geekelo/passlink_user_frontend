@@ -1,13 +1,23 @@
 @media only screen and (max-width: 768px) {
   .info-section {
     padding: 2rem 1rem;
-    text-align: justify;
+    text-align: left;
+  }
+
+  .content-title {
+    padding-top: 2rem;
+    font-size: 2rem;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .info-section {
     padding: 2rem 1rem;
-    text-align: justify;
+    text-align: left;
+  }
+
+  .content-title {
+    padding-top: 2rem;
+    font-size: 3rem;
   }
 }

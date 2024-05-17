@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,6 +21,10 @@ function InfoSection({ location }) {
   const pageLocation = useLocation();
   const { pathname } = location || pageLocation;
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   // Define FontAwesome icons for each section
   const icons = {
     default: faThumbsUp,
@@ -41,7 +45,7 @@ function InfoSection({ location }) {
     <div className="info-section">
       <InfoNav />
       <h2 className="content-title">
-        <FontAwesomeIcon icon={icons[content.title]} />
+        <FontAwesomeIcon icon={icons[content.title] || icons['Our Mission']} />
         &nbsp;
         {content.title}
       </h2>
