@@ -53,4 +53,10 @@
 /* Hover state for menu links */
 .menuLinks:hover {
   letter-spacing: 4px; /* Increased letter spacing on hover */
+  color: #0f0f0f;
+}
+
+/* Registered Events Icon on hover */
+.registered-events-icon:hover {
+  color: #0f0f0f /* Font size adjustment */
 }

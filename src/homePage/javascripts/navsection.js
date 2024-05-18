@@ -14,9 +14,6 @@ function NavSection() {
       </NavLink>
       {/* Menu Section */}
       <div className="menuSection">
-        {/* Mobile menu icons */}
-        <p className="openHamburger menuIcons">Mobile icon</p>
-        <p className="closeHamburger menuIcons">Close icon</p>
         {/* Menu items section */}
         <section className="menuItemsSection">
           {/* Link to Registered Events */}

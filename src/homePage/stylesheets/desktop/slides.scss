@@ -162,7 +162,7 @@
   color: #fff; /* Text color */
   font-weight: bolder; /* Font weight */
   z-index: 1; /* Z-index */
-  transition: 0.5s; /* Transition duration */
+  transition: 0.5; /* Transition duration */
   backdrop-filter: blur(15px); /* Background filter */
 }
 
@@ -171,8 +171,8 @@
   letter-spacing: 3px; /* Increased letter spacing on hover */
 }
 
-/* Pseudo-element before the button */
-.btn::before {
+/* Pseudo-element after the button */
+.btn::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -183,11 +183,11 @@
   background: rgb(226, 192, 0); /* Background color */
   border-radius: 10px; /* Border radius */
   transition: 0.5s; /* Transition duration */
-  transition-delay: 0.5s; /* Delay for transition */
+  transition-delay: 0.1s; /* Delay for transition */
 }
 
-/* Pseudo-element after the button */
-.btn::after {
+/* Pseudo-element before the button */
+.btn::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -198,7 +198,7 @@
   background: rgb(226, 192, 0); /* Background color */
   border-radius: 10px; /* Border radius */
   transition: 0.5s; /* Transition duration */
-  transition-delay: 0.5s; /* Delay for transition */
+  transition-delay: 0.1s; /* Delay for transition */
 }
 
 /* Styling for pseudo-elements before and after */
@@ -212,16 +212,16 @@
     0 0 60px rgb(226, 192, 0); /* Box shadow */
 }
 
-/* Hover state for the pseudo-element before */
-.btn:hover::before {
+/* Hover state for the pseudo-element after */
+.btn:hover::after {
   bottom: 0;
   height: 50%; /* Height */
   width: 80%; /* Width */
   border-radius: 30px; /* Border radius */
 }
 
-/* Hover state for the pseudo-element after */
-.btn:hover::after {
+/* Hover state for the pseudo-element before */
+.btn:hover::before {
   top: 0;
   height: 50%; /* Height */
   width: 80%; /* Width */

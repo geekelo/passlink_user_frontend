@@ -1,238 +1,3 @@
-/* Body Slide */
-.body-slide {
-  display: flex; /* Flex display */
-  margin: auto; /* Centering the slide */
-  text-align: left; /* Text alignment */
-  padding: 4rem 0 1rem 5rem; /* Padding */
-  width: 60%; /* Width of the slide */
-  height: 50vmin; /* Responsive height */
-  color: white; /* Text color */
-  text-shadow: 0 1px 0 #000; /* Text shadow */
-
-  /* Main background gradient */
-  --border-angle: 0turn;
-  --main-bg:
-    conic-gradient(
-      from var(--border-angle),
-      #434343,
-      #434343 5%,
-      #434343 60%,
-      #434343 95%
-    );
-
-  /* Gradient border */
-  border: solid 1px transparent;
-  border-radius: 2em;
-
-  --gradient-border:
-    conic-gradient(
-      from var(--border-angle),
-      transparent 0%,
-      #ffffff3a,
-      rgba(226, 192, 0, 0.26),
-      99%,
-      transparent
-    );
-  background:
-    var(--main-bg) padding-box,
-    var(--gradient-border) border-box,
-    var(--main-bg) border-box;
-  background-position: center center;
-  animation: bg-spin 3s linear infinite; /* Background rotation animation */
-  animation: fadeIn 3s; /* Fade-in animation */
-}
-
-/* Keyframes for background rotation */
-@keyframes bg-spin {
-  to {
-    --border-angle: 1turn;
-  }
-}
-
-/* Keyframes for fade-in animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0.1;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-/* Custom property for border angle */
-@property --border-angle {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0turn;
-}
-
-/* Slide Content */
-.slide-content {
-  display: flex;
-  flex-direction: column;
-  flex: 70%; /* Flex basis */
-  gap: 1rem; /* Gap between elements */
-}
-
-/* Title styling */
-.title {
-  font-family: "Lato", sans-serif;
-  font-size: 3.5rem;
-  font-weight: 800;
-  padding: 0;
-  margin: 0;
-  line-height: 3.5rem;
-  color: rgba(231, 231, 231, 0.812); /* Text color */
-}
-
-/* Ticks CTA Section */
-.ticks-cta-section {
-  display: flex;
-  flex-direction: column;
-  gap: 30px; /* Gap between sections */
-}
-
-/* Ticks Section */
-.ticks-section {
-  font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1px; /* Gap between ticks */
-}
-
-/* Ticks text styling */
-.ticks-section p {
-  color: rgba(231, 231, 231, 0.682); /* Text color */
-  margin: 0;
-}
-
-/* Ticks color */
-.ticks {
-  color: rgba(226, 192, 0, 0.839); /* Tick color */
-}
-
-/* Infographic Section */
-.infographic-section {
-  display: flex;
-  flex: 20%; /* 20% of the container's width */
-}
-
-/* Infographic styling */
-.infographic {
-  width: 70%; /* 70% of the infographic-section */
-}
-
-/* Button styling */
-.btn {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 50px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0); /* Transparent background */
-  border: none;
-}
-
-/* Button link styling */
-.btn a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  font-size: 1rem;
-  justify-content: center;
-  align-items: center;
-  background: #333; /* Dark background color */
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.613); /* Box shadow */
-  border-bottom: 1px solid rgba(3, 3, 3, 0.839); /* Border bottom */
-  border-top: 1px solid rgba(0, 0, 0, 1); /* Border top */
-  border-radius: 30px; /* Border radius */
-  padding: 1px; /* Padding */
-  letter-spacing: 1px; /* Letter spacing */
-  text-decoration: none; /* Text decoration */
-  overflow: hidden; /* Overflow */
-  color: #fff; /* Text color */
-  font-weight: bolder; /* Font weight */
-  z-index: 1; /* Z-index */
-  transition: 0.5s; /* Transition */
-  backdrop-filter: blur(15px); /* Backdrop filter */
-}
-
-/* Button hover link styling */
-.btn:hover a {
-  letter-spacing: 3px; /* Increased letter spacing on hover */
-}
-
-/* Button hover effect styling */
-.btn:hover a::before {
-  transform: skewX(45deg) translate(200px); /* Skew transformation on hover */
-}
-
-/* Button before pseudo-element styling */
-.btn::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -5px;
-  width: 30px;
-  height: 10px;
-  background: rgb(226, 192, 0); /* Background color */
-  border-radius: 10px; /* Border radius */
-  transition: 0.5s; /* Transition */
-  transition-delay: 0.5s; /* Transition delay */
-}
-
-/* Button hover before pseudo-element styling */
-.btn:hover::before {
-  bottom: 0;
-  height: 50%;
-  width: 80%;
-  border-radius: 30px; /* Border radius on hover */
-}
-
-/* Button after pseudo-element styling */
-.btn::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -5px;
-  width: 30px;
-  height: 10px;
-  background: rgb(226, 192, 0); /* Background color */
-  border-radius: 10px; /* Border radius */
-  transition: 0.5s; /* Transition */
-  transition-delay: 0.5s; /* Transition delay */
-}
-
-/* Button before and after pseudo-element shared styling */
-.btn::before,
-.btn::after {
-  background: rgb(226, 192, 0); /* Background color */
-  box-shadow:
-    0 0 5px rgb(226, 192, 0), /* Box shadow */
-    0 0 15px rgb(226, 192, 0), /* Box shadow */
-    0 0 30px rgb(226, 192, 0), /* Box shadow */
-    0 0 60px rgb(226, 192, 0); /* Box shadow */
-}
-
-/* Button hover after pseudo-element styling */
-.btn:hover::after {
-  top: 0;
-  height: 50%;
-  width: 80%;
-  border-radius: 30px; /* Border radius on hover */
-}
-
 @media only screen and (max-width: 768px) {
   /* Body Slide adjustments */
   .body-slide {
@@ -306,12 +71,28 @@
   }
 
   /* Button link hover before pseudo-element adjustments */
-  .btn:hover a::before {
+  .btn:hover a::after {
     transform: skewX(45deg) translate(200px); /* Skew transformation on hover */
   }
 
-  /* Button before pseudo-element adjustments */
+  /* Button hover before pseudo-element adjustments */
+  .btn::after {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px; /* Border radius on hover */
+  }
+
+  /* Button hover after pseudo-element adjustments */
   .btn::before {
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px; /* Border radius on hover */
+  }
+
+  /* Button before pseudo-element adjustments */
+  .btn:hover::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -322,11 +103,11 @@
     background: rgb(226, 192, 0); /* Background color */
     border-radius: 10px; /* Border radius */
     transition: 0.5s; /* Transition */
-    transition-delay: 0.5s; /* Transition delay */
+    transition-delay: 0.1s; /* Transition delay */
   }
 
   /* Button after pseudo-element adjustments */
-  .btn::after {
+  .btn:hover::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -337,34 +118,17 @@
     background: rgb(226, 192, 0); /* Background color */
     border-radius: 10px; /* Border radius */
     transition: 0.5s; /* Transition */
-    transition-delay: 0.5s; /* Transition delay */
+    transition-delay: 0.1s; /* Transition delay */
   }
 
   /* Button before and after pseudo-element shared adjustments */
   .btn::before,
   .btn::after {
     background: rgb(226, 192, 0); /* Background color */
-    box-shadow:
-      0 0 5px rgb(226, 192, 0), /* Box shadow */
-      0 0 15px rgb(226, 192, 0), /* Box shadow */
-      0 0 30px rgb(226, 192, 0), /* Box shadow */
-      0 0 60px rgb(226, 192, 0); /* Box shadow */
-  }
-
-  /* Button hover before pseudo-element adjustments */
-  .btn:hover::before {
-    bottom: 0;
-    height: 50%;
-    width: 80%;
-    border-radius: 30px; /* Border radius on hover */
-  }
-
-  /* Button hover after pseudo-element adjustments */
-  .btn:hover::after {
-    top: 0;
-    height: 50%;
-    width: 80%;
-    border-radius: 30px; /* Border radius on hover */
+    box-shadow: 0 0 5px rgb(226, 192, 0),
+      /* Box shadow */ 0 0 15px rgb(226, 192, 0),
+      /* Box shadow */ 0 0 30px rgb(226, 192, 0),
+      /* Box shadow */ 0 0 60px rgb(226, 192, 0); /* Box shadow */
   }
 }
 
