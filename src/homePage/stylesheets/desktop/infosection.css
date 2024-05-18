@@ -1,6 +1,7 @@
 /* Background styling for the info body */
 .info-body {
-  background: conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0),
+  background:
+    conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0),
     conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(1 * 32px)
       calc(3 * 32px),
     conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(2 * 32px)
@@ -34,17 +35,20 @@
   padding-right: 5rem; /* Right padding */
   color: white; /* Text color */
   text-shadow: 0 1px 0 #000; /* Text shadow */
+
   --border-angle: 0turn; /* Initial angle for gradient */
-  --main-bg: conic-gradient(
-    from var(--border-angle),
-    #434343,
-    #434343 5%,
-    #434343 60%,
-    #434343 95%
-  ); /* Main background gradient */
+  --main-bg:
+    conic-gradient(
+      from var(--border-angle),
+      #434343,
+      #434343 5%,
+      #434343 60%,
+      #434343 95%
+    ); /* Main background gradient */
 
   border: solid 1px transparent; /* Transparent border */
   border-radius: 2em; /* Border radius */
+
   --gradient-border: conic-gradient(
     from var(--border-angle),
     transparent 0%,
@@ -53,7 +57,10 @@
     99%,
     transparent
   ); /* Gradient border */
-  background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+
+  background:
+    var(--main-bg) padding-box,
+    var(--gradient-border) border-box,
     var(--main-bg) border-box; /* Combined background */
   background-position: center center; /* Background position */
   animation: bg-spin 3s linear infinite; /* Background animation */
