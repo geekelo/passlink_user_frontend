@@ -17,10 +17,13 @@ import data from '../data/data.json';
 import InfoNav from './infonav';
 import CopyButton from './copybtn';
 
+// InfoSection component
 function InfoSection({ location }) {
+  // Get the current pathname from the location
   const pageLocation = useLocation();
   const { pathname } = location || pageLocation;
 
+  // Scroll to the top of the page whenever the pathname changes
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -40,22 +43,32 @@ function InfoSection({ location }) {
     Contact: faEnvelope,
   };
 
+  // Get the content for the current page from the data
   const content = data.data[pathname];
+
   return (
     <div className="info-section">
+      {/* Navigation component */}
       <InfoNav />
+
+      {/* Page title with icon */}
       <h2 className="content-title">
         <FontAwesomeIcon icon={icons[content.title] || icons['Our Mission']} />
         &nbsp;
         {content.title}
       </h2>
-      { content.sections.map((section) => (
+
+      {/* Render each section */}
+      {content.sections.map((section) => (
         <div className="section" key={section.id}>
+          {/* Section title with icon */}
           <h3 className="section-title">
             <FontAwesomeIcon icon={icons[section.title] || icons.default} />
             &nbsp;
             {section.title}
           </h3>
+
+          {/* Section content with copy button */}
           <p className="section-content">
             {section.content}
             <CopyButton textToCopy={section.content} />
@@ -66,6 +79,7 @@ function InfoSection({ location }) {
   );
 }
 
+// Define the prop types for the component
 InfoSection.propTypes = {
   location: PropTypes.string.isRequired,
 };

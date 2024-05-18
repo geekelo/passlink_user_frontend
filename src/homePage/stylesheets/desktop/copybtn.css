@@ -1,6 +1,7 @@
+/* Styling for the copy button */
 .copybtn {
-  padding-top: 1rem;
-  background-color: rgba(19, 19, 19, 0);
-  color: rgba(255, 255, 255, 0.932);
-  border: none;
+  padding-top: 1rem; /* Top padding of 1 rem unit */
+  background-color: rgba(19, 19, 19, 0); /* Transparent background */
+  color: rgba(255, 255, 255, 0.932); /* White color with slight transparency */
+  border: none; /* No border */
 }

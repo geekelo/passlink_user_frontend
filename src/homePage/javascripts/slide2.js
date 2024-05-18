@@ -1,14 +1,19 @@
 import React from 'react';
 import infograpghic2 from '../../assets/infographic2.png';
 
+// SlideTwo component representing the second slide
 function SlideTwo() {
   return (
     <div className="body-slide">
       <div className="slide-content">
+        {/* Title of the slide */}
         <h1 className="title">
           An effective event management portal.
         </h1>
+
+        {/* Section containing ticks and call-to-action button */}
         <div className="ticks-cta-section">
+          {/* Section with ticked benefits */}
           <div className="ticks-section">
             <p>
               <span className="ticks">✔</span>
@@ -27,6 +32,8 @@ function SlideTwo() {
               <span>Send reminders to registered attendees</span>
             </p>
           </div>
+
+          {/* Call-to-action button */}
           <button className="btn" type="submit">
             <a href="v.com">
               <span>ADD EVENT &nbsp;</span>
@@ -35,6 +42,8 @@ function SlideTwo() {
           </button>
         </div>
       </div>
+
+      {/* Section containing infographic */}
       <div className="infographic-section">
         <img className="infographic" src={infograpghic2} alt="infographic" />
       </div>

@@ -1,21 +1,24 @@
+/* Styling for the arrow buttons */
 .arrow {
-  color: rgba(176, 176, 176, 0.257);
-  font-size: 1.5rem;
-  background-color: rgba(176, 176, 176, 0);
-  border: none;
+  color: rgba(176, 176, 176, 0.257); /* Light gray color with transparency */
+  font-size: 1.5rem; /* Font size of 1.5 rem units */
+  background-color: rgba(176, 176, 176, 0); /* Transparent background */
+  border: none; /* No border */
 }
 
+/* Styling for the active arrow button */
 .active-arrow {
-  color: rgba(226, 192, 0, 0.839);
+  color: rgba(226, 192, 0, 0.839); /* Golden yellow color with transparency */
   animation: arrowAnimation 0.8s linear infinite alternate; /* Add animation properties */
 }
 
+/* Keyframes for the arrow animation */
 @keyframes arrowAnimation {
   0% {
-    transform: translateX(-5px); /* Move left */
+    transform: translateX(-5px); /* Move left by 5px */
   }
 
   100% {
-    transform: translateX(5px); /* Move right */
+    transform: translateX(5px); /* Move right by 5px */
   }
 }

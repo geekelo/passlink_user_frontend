@@ -1,203 +1,236 @@
+/* Styling for the site footer */
 .site-footer {
-  background-color: #131313;
-  padding: 45px 0 20px;
-  font-size: 15px;
-  line-height: 24px;
-  color: #737373;
-  margin-top: 80px;
+  background-color: #131313; /* Dark background color */
+  padding: 45px 0 20px; /* Top and bottom padding, no left/right padding */
+  font-size: 15px; /* Font size */
+  line-height: 24px; /* Line height */
+  color: #737373; /* Text color */
+  margin-top: 80px; /* Top margin */
 }
 
+/* Container for centering content */
 .container {
-  width: 80%;
-  margin: auto;
+  width: 80%; /* Width of the container */
+  margin: auto; /* Center the container */
 }
 
+/* Row layout for columns */
 .row {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
-  place-content: space-between;
+  display: flex; /* Flexbox layout */
+  gap: 30px; /* Gap between items */
+  justify-content: space-between; /* Space between items */
+  place-content: space-between; /* Alignment of flex items */
 }
 
+/* Column one text styling */
 .column-one-text {
-  flex: 40%;
-  text-align: left;
+  flex: 40%; /* Flex size */
+  text-align: left; /* Left alignment */
 }
 
+/* Column one link styling */
 .column-one-link {
-  flex: 20%;
-  text-align: left;
+  flex: 20%; /* Flex size */
+  text-align: left; /* Left alignment */
 }
 
+/* Column two layout */
 .column-two {
-  flex: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: left;
+  flex: 50%; /* Flex size */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center alignment */
+  justify-content: space-between; /* Space between items */
+  text-align: left; /* Left alignment */
 }
 
+/* Styling for footer links */
 .footer-links {
-  padding-left: 0;
-  list-style: none;
+  padding-left: 0; /* No padding left */
+  list-style: none; /* No list style */
 }
 
+/* Styling for footer link items */
 .footer-links li {
-  display: block;
+  display: block; /* Block display */
 }
 
+/* Inline styling for footer links */
 .footer-links.inline li {
-  display: inline-block;
+  display: inline-block; /* Inline block display */
 }
 
+/* Styling for footer links */
 .footer-links a {
-  color: #737373;
-  text-decoration: none;
+  color: #737373; /* Text color */
+  text-decoration: none; /* No underline */
 }
 
+/* Styling for active, focus, and hover states of footer links */
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-  color: rgb(197, 168, 1);
-  text-decoration: none;
+  color: rgb(197, 168, 1); /* Active/focus/hover text color */
+  text-decoration: none; /* No underline */
 }
 
+/* Styling for footer section titles */
 .site-footer h6 {
-  color: #fff;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-top: 5px;
-  letter-spacing: 2px;
+  color: #fff; /* Text color */
+  font-size: 16px; /* Font size */
+  text-transform: uppercase; /* Uppercase text */
+  margin-top: 5px; /* Top margin */
+  letter-spacing: 2px; /* Letter spacing */
 }
 
+/* Styling for footer links */
 .site-footer a {
-  color: #737373;
-  text-decoration: none;
+  color: #737373; /* Text color */
+  text-decoration: none; /* No underline */
 }
 
+/* Styling for hover state of footer links */
 .site-footer a:hover {
-  color: rgb(197, 168, 1);
-  text-decoration: none;
+  color: rgb(197, 168, 1); /* Hover text color */
+  text-decoration: none; /* No underline */
 }
 
+/* Styling for footer horizontal rule */
 .site-footer hr {
-  border-top: #bbb;
-  border-color: rgb(197, 168, 1);
-  opacity: 0.5;
+  border-top: #bbb; /* Top border color */
+  border-color: rgb(197, 168, 1); /* Border color */
+  opacity: 0.5; /* Opacity */
 }
 
+/* Small horizontal rule */
 .site-footer hr.small {
-  margin: 20px 0;
+  margin: 20px 0; /* Top and bottom margin */
 }
 
+/* Styling for footer logo */
 .footerlogo {
-  width: 50%;
+  width: 50%; /* Logo width */
 }
 
+/* Styling for social icons */
 .social-icons {
-  width: 100%;
-  justify-content: flex-end;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
+  width: 100%; /* Full width */
+  justify-content: flex-end; /* Right alignment */
+  padding-left: 0; /* No padding left */
+  margin-bottom: 0; /* No bottom margin */
+  list-style: none; /* No list style */
 }
 
+/* Styling for social icon items */
 .social-icons li {
-  display: inline-block;
-  margin-bottom: 4px;
+  display: inline-block; /* Inline block display */
+  margin-bottom: 4px; /* Bottom margin */
 }
 
+/* Styling for social icon title */
 .social-icons li.title {
-  margin-right: 15px;
-  text-transform: uppercase;
-  color: #96a2b2;
-  font-weight: 700;
-  font-size: 13px;
+  margin-right: 15px; /* Right margin */
+  text-transform: uppercase; /* Uppercase text */
+  color: #96a2b2; /* Text color */
+  font-weight: 700; /* Font weight */
+  font-size: 13px; /* Font size */
 }
 
+/* Styling for small size social icons */
 .social-icons.size-sm a {
-  line-height: 34px;
-  height: 34px;
-  width: 34px;
-  font-size: 14px;
+  line-height: 34px; /* Line height */
+  height: 34px; /* Height */
+  width: 34px; /* Width */
+  font-size: 14px; /* Font size */
 }
 
+/* Styling for social icons */
 .social-icons a {
-  background-color: #eceeef;
-  color: #818a91;
-  font-size: 16px;
-  display: inline-block;
-  line-height: 44px;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  margin-right: 8px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  background-color: #eceeef; /* Background color */
+  color: #818a91; /* Text color */
+  font-size: 16px; /* Font size */
+  display: inline-block; /* Inline block display */
+  line-height: 44px; /* Line height */
+  width: 44px; /* Width */
+  height: 44px; /* Height */
+  text-align: center; /* Center alignment */
+  margin-right: 8px; /* Right margin */
+  border-radius: 100%; /* Border radius */
+  transition: all 0.2s linear; /* Transition effect */
 }
 
+/* Styling for active, focus, and hover states of social icons */
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
-  color: #fff;
-  background-color: #29aafe;
+  color: #fff; /* Text color */
+  background-color: #29aafe; /* Background color */
 }
 
+/* Styling for Facebook hover state */
 .social-icons a.facebook:hover {
-  background-color: #3b5998;
+  background-color: #3b5998; /* Facebook background color */
 }
 
+/* Styling for Twitter hover state */
 .social-icons a.twitter:hover {
-  background-color: #00aced;
+  background-color: #00aced; /* Twitter background color */
 }
 
+/* Styling for LinkedIn hover state */
 .social-icons a.linkedin:hover {
-  background-color: #007bb6;
+  background-color: #007bb6; /* LinkedIn background color */
 }
 
+/* Styling for email hover state */
 .social-icons a.email:hover {
-  background-color: #ea4c89;
+  background-color: #ea4c89; /* Email background color */
 }
 
+/* Styling for social icons in the site footer */
 .site-footer .social-icons {
-  text-align: right;
+  text-align: right; /* Right alignment */
 }
 
+/* Styling for social icons in the site footer */
 .site-footer .social-icons a {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  margin-left: 6px;
-  margin-right: 0;
-  border-radius: 100%;
-  background-color: #33353d;
+  width: 40px; /* Width */
+  height: 40px; /* Height */
+  line-height: 40px; /* Line height */
+  margin-left: 6px; /* Left margin */
+  margin-right: 0; /* Right margin */
+  border-radius: 100%; /* Border radius */
+  background-color: #33353d; /* Background color */
 }
 
+/* Styling for active, focus, and hover states of social icons in the site footer */
 .site-footer .social-icons a:active,
 .site-footer .social-icons a:focus,
 .site-footer .social-icons a:hover {
-  color: #fff;
-  background-color: #29aafe;
+  color: #fff; /* Text color */
+  background-color: #29aafe; /* Background color */
 }
 
+/* Styling for Facebook hover state in the site footer */
 .site-footer .social-icons a.facebook:hover {
-  background-color: #3b5998;
+  background-color: #3b5998; /* Facebook background color */
 }
 
+/* Styling for Twitter hover state in the site footer */
 .site-footer .social-icons a.twitter:hover {
-  background-color: #00aced;
+  background-color: #00aced; /* Twitter background color */
 }
 
+/* Styling for LinkedIn hover state in the site footer */
 .site-footer .social-icons a.linkedin:hover {
-  background-color: #007bb6;
+  background-color: #007bb6; /* LinkedIn background color */
 }
 
+/* Styling for email hover state in the site footer */
 .site-footer .social-icons a.email:hover {
-  background-color: #ea4c89;
+  background-color: #ea4c89; /* Email background color */
 }
 
+/* Styling for copyright text */
 .copyright-text {
-  margin: 0;
+  margin: 0; /* No margin */
 }
