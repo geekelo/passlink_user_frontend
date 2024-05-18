@@ -49,6 +49,12 @@
   list-style: none; /* No list style */
 }
 
+/* Styling for social icon items */
+.social-icons li {
+  display: inline-block; /* Inline block display */
+  margin-bottom: 4px; /* Bottom margin */
+}
+
 /* Styling for footer link items */
 .footer-links li {
   display: block; /* Block display */
@@ -61,6 +67,27 @@
 
 /* Styling for footer links */
 .footer-links a {
+  color: #737373; /* Text color */
+  text-decoration: none; /* No underline */
+}
+
+/* Styling for social icons */
+.social-icons a {
+  background-color: #eceeef; /* Background color */
+  color: #818a91; /* Text color */
+  font-size: 16px; /* Font size */
+  display: inline-block; /* Inline block display */
+  line-height: 44px; /* Line height */
+  width: 44px; /* Width */
+  height: 44px; /* Height */
+  text-align: center; /* Center alignment */
+  margin-right: 8px; /* Right margin */
+  border-radius: 100%; /* Border radius */
+  transition: all 0.2s linear; /* Transition effect */
+}
+
+/* Styling for footer links */
+.site-footer a {
   color: #737373; /* Text color */
   text-decoration: none; /* No underline */
 }
@@ -80,12 +107,6 @@
   text-transform: uppercase; /* Uppercase text */
   margin-top: 5px; /* Top margin */
   letter-spacing: 2px; /* Letter spacing */
-}
-
-/* Styling for footer links */
-.site-footer a {
-  color: #737373; /* Text color */
-  text-decoration: none; /* No underline */
 }
 
 /* Styling for hover state of footer links */
@@ -120,12 +141,6 @@
   list-style: none; /* No list style */
 }
 
-/* Styling for social icon items */
-.social-icons li {
-  display: inline-block; /* Inline block display */
-  margin-bottom: 4px; /* Bottom margin */
-}
-
 /* Styling for social icon title */
 .social-icons li.title {
   margin-right: 15px; /* Right margin */
@@ -141,21 +156,6 @@
   height: 34px; /* Height */
   width: 34px; /* Width */
   font-size: 14px; /* Font size */
-}
-
-/* Styling for social icons */
-.social-icons a {
-  background-color: #eceeef; /* Background color */
-  color: #818a91; /* Text color */
-  font-size: 16px; /* Font size */
-  display: inline-block; /* Inline block display */
-  line-height: 44px; /* Line height */
-  width: 44px; /* Width */
-  height: 44px; /* Height */
-  text-align: center; /* Center alignment */
-  margin-right: 8px; /* Right margin */
-  border-radius: 100%; /* Border radius */
-  transition: all 0.2s linear; /* Transition effect */
 }
 
 /* Styling for active, focus, and hover states of social icons */
