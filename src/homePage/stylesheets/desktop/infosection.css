@@ -1,3 +1,4 @@
+/* Background styling for the info body */
 .info-body {
   background: conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0),
     conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(1 * 32px)
@@ -17,32 +18,33 @@
     conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(4 * 32px)
       calc(1 * 32px),
     #fff;
-  background-size: 160px 160px;
+  background-size: 160px 160px; /* Background size */
 }
 
+/* Styling for the info section */
 .info-section {
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
-  background-color: #0f0f0f;
-  margin: auto;
-  text-align: left;
-  padding: 4rem 0 1rem 5rem;
-  width: 80%;
-  padding-right: 5rem;
-  color: white;
-  text-shadow: 0 1px 0 #000;
-  --border-angle: 0turn;
+  font-family: "Roboto", sans-serif; /* Font family */
+  background-color: #0f0f0f; /* Background color */
+  margin: auto; /* Center align horizontally */
+  text-align: left; /* Left align text */
+  padding: 4rem 0 1rem 5rem; /* Padding */
+  width: 80%; /* Width of the section */
+  padding-right: 5rem; /* Right padding */
+  color: white; /* Text color */
+  text-shadow: 0 1px 0 #000; /* Text shadow */
+  --border-angle: 0turn; /* Initial angle for gradient */
   --main-bg: conic-gradient(
     from var(--border-angle),
     #434343,
     #434343 5%,
     #434343 60%,
     #434343 95%
-  );
+  ); /* Main background gradient */
 
-  border: solid 1px transparent;
-  border-radius: 2em;
+  border: solid 1px transparent; /* Transparent border */
+  border-radius: 2em; /* Border radius */
   --gradient-border: conic-gradient(
     from var(--border-angle),
     transparent 0%,
@@ -50,43 +52,49 @@
     rgba(226, 192, 0, 0.26),
     99%,
     transparent
-  );
+  ); /* Gradient border */
   background: var(--main-bg) padding-box, var(--gradient-border) border-box,
-    var(--main-bg) border-box;
-  background-position: center center;
-  animation: bg-spin 3s linear infinite;
+    var(--main-bg) border-box; /* Combined background */
+  background-position: center center; /* Background position */
+  animation: bg-spin 3s linear infinite; /* Background animation */
 }
 
+/* Animation keyframes for background spin */
 @keyframes bg-spin {
   to {
-    --border-angle: 1turn;
+    --border-angle: 1turn; /* Full turn rotation */
   }
 }
 
+/* Styling for the content title */
 .content-title {
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 3.5rem;
-  color: rgb(174, 148, 1);
+  text-align: left; /* Left align text */
+  text-transform: uppercase; /* Uppercase text */
+  font-size: 3.5rem; /* Font size */
+  color: rgb(174, 148, 1); /* Text color */
 }
 
+/* Styling for each section */
 .section {
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(187, 187, 187, 0.1);
-  opacity: 0.8;
-  padding-top: 2rem;
+  border-bottom-width: 2px; /* Border width */
+  border-bottom-style: solid; /* Border style */
+  border-bottom-color: rgba(187, 187, 187, 0.1); /* Border color */
+  opacity: 0.8; /* Opacity */
+  padding-top: 2rem; /* Top padding */
 }
 
+/* Last child section styling */
 .section:last-child {
-  border-bottom: none;
+  border-bottom: none; /* Remove bottom border */
 }
 
+/* Styling for the section title */
 .section-title {
-  color: rgb(197, 168, 1);
+  color: rgb(197, 168, 1); /* Text color */
 }
 
+/* Styling for the section content */
 .section-content {
-  color: #fff;
-  opacity: 1;
+  color: #fff; /* Text color */
+  opacity: 1; /* Full opacity */
 }

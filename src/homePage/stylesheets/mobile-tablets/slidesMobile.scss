@@ -1,26 +1,27 @@
+/* Body Slide */
 .body-slide {
-  display: flex;
-  margin: auto;
-  text-align: left;
-  padding: 4rem 0 1rem 5rem;
-  width: 60%;
-  height: 50vmin;
-  color: white;
-  text-shadow: 0 1px 0 #000;
+  display: flex; /* Flex display */
+  margin: auto; /* Centering the slide */
+  text-align: left; /* Text alignment */
+  padding: 4rem 0 1rem 5rem; /* Padding */
+  width: 60%; /* Width of the slide */
+  height: 50vmin; /* Responsive height */
+  color: white; /* Text color */
+  text-shadow: 0 1px 0 #000; /* Text shadow */
 
+  /* Main background gradient */
   --border-angle: 0turn;
-  --main-bg:
-    conic-gradient(
-      from var(--border-angle),
-      #434343,
-      #434343 5%,
-      #434343 60%,
-      #434343 95%
-    );
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    #434343,
+    #434343 5%,
+    #434343 60%,
+    #434343 95%
+  );
 
+  /* Gradient border */
   border: solid 1px transparent;
   border-radius: 2em;
-
   --gradient-border: conic-gradient(
     from var(--border-angle),
     transparent 0%,
@@ -32,16 +33,18 @@
   background: var(--main-bg) padding-box, var(--gradient-border) border-box,
     var(--main-bg) border-box;
   background-position: center center;
-  animation: bg-spin 3s linear infinite;
-  animation: fadeIn 3s;
+  animation: bg-spin 3s linear infinite; /* Background rotation animation */
+  animation: fadeIn 3s; /* Fade-in animation */
 }
 
+/* Keyframes for background rotation */
 @keyframes bg-spin {
   to {
     --border-angle: 1turn;
   }
 }
 
+/* Keyframes for fade-in animation */
 @keyframes fadeIn {
   from {
     opacity: 0.1;
@@ -51,19 +54,22 @@
   }
 }
 
+/* Custom property for border angle */
 @property --border-angle {
   syntax: "<angle>";
   inherits: true;
   initial-value: 0turn;
 }
 
+/* Slide Content */
 .slide-content {
   display: flex;
   flex-direction: column;
-  flex: 70%;
-  gap: 1rem;
+  flex: 70%; /* Flex basis */
+  gap: 1rem; /* Gap between elements */
 }
 
+/* Title styling */
 .title {
   font-family: "Lato", sans-serif;
   font-size: 3.5rem;
@@ -71,41 +77,48 @@
   padding: 0;
   margin: 0;
   line-height: 3.5rem;
-  color: rgba(231, 231, 231, 0.812);
+  color: rgba(231, 231, 231, 0.812); /* Text color */
 }
 
+/* Ticks CTA Section */
 .ticks-cta-section {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 30px; /* Gap between sections */
 }
 
+/* Ticks Section */
 .ticks-section {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 1px; /* Gap between ticks */
 }
 
+/* Ticks text styling */
 .ticks-section p {
-  color: rgba(231, 231, 231, 0.682);
+  color: rgba(231, 231, 231, 0.682); /* Text color */
   margin: 0;
 }
 
+/* Ticks color */
 .ticks {
-  color: rgba(226, 192, 0, 0.839);
+  color: rgba(226, 192, 0, 0.839); /* Tick color */
 }
 
+/* Infographic Section */
 .infographic-section {
   display: flex;
-  flex: 20%;
+  flex: 20%; /* 20% of the container's width */
 }
 
+/* Infographic styling */
 .infographic {
-  width: 70%;
+  width: 70%; /* 70% of the infographic-section */
 }
 
+/* Button styling */
 .btn {
   position: relative;
   top: 0;
@@ -116,10 +129,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
   border: none;
 }
 
+/* Button link styling */
 .btn a {
   position: absolute;
   top: 0;
@@ -130,30 +144,33 @@
   font-size: 1rem;
   justify-content: center;
   align-items: center;
-  background: #333;
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.613);
-  border-bottom: 1px solid rgba(3, 3, 3, 0.839);
-  border-top: 1px solid rgba(0, 0, 0, 1);
-  border-radius: 30px;
-  padding: 1px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  overflow: hidden;
-  color: #fff;
-  font-weight: bolder;
-  z-index: 1;
-  transition: 0.5s;
-  backdrop-filter: blur(15px);
+  background: #333; /* Dark background color */
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.613); /* Box shadow */
+  border-bottom: 1px solid rgba(3, 3, 3, 0.839); /* Border bottom */
+  border-top: 1px solid rgba(0, 0, 0, 1); /* Border top */
+  border-radius: 30px; /* Border radius */
+  padding: 1px; /* Padding */
+  letter-spacing: 1px; /* Letter spacing */
+  text-decoration: none; /* Text decoration */
+  overflow: hidden; /* Overflow */
+  color: #fff; /* Text color */
+  font-weight: bolder; /* Font weight */
+  z-index: 1; /* Z-index */
+  transition: 0.5s; /* Transition */
+  backdrop-filter: blur(15px); /* Backdrop filter */
 }
 
+/* Button hover link styling */
 .btn:hover a {
-  letter-spacing: 3px;
+  letter-spacing: 3px; /* Increased letter spacing on hover */
 }
 
+/* Button hover effect styling */
 .btn:hover a::before {
-  transform: skewX(45deg) translate(200px);
+  transform: skewX(45deg) translate(200px); /* Skew transformation on hover */
 }
 
+/* Button before pseudo-element styling */
 .btn::before {
   content: "";
   position: absolute;
@@ -162,19 +179,21 @@
   bottom: -5px;
   width: 30px;
   height: 10px;
-  background: rgb(226, 192, 0);
-  border-radius: 10px;
-  transition: 0.5s;
-  transition-delay: 0.5s;
+  background: rgb(226, 192, 0); /* Background color */
+  border-radius: 10px; /* Border radius */
+  transition: 0.5s; /* Transition */
+  transition-delay: 0.5s; /* Transition delay */
 }
 
+/* Button hover before pseudo-element styling */
 .btn:hover::before {
   bottom: 0;
   height: 50%;
   width: 80%;
-  border-radius: 30px;
+  border-radius: 30px; /* Border radius on hover */
 }
 
+/* Button after pseudo-element styling */
 .btn::after {
   content: "";
   position: absolute;
@@ -183,96 +202,108 @@
   top: -5px;
   width: 30px;
   height: 10px;
-  background: rgb(226, 192, 0);
-  border-radius: 10px;
-  transition: 0.5s;
-  transition-delay: 0.5s;
+  background: rgb(226, 192, 0); /* Background color */
+  border-radius: 10px; /* Border radius */
+  transition: 0.5s; /* Transition */
+  transition-delay: 0.5s; /* Transition delay */
 }
 
+/* Button hover after pseudo-element styling */
 .btn:hover::after {
   top: 0;
   height: 50%;
   width: 80%;
-  border-radius: 30px;
+  border-radius: 30px; /* Border radius on hover */
 }
 
+/* Button before and after pseudo-element shared styling */
 .btn::before,
 .btn::after {
-  background: rgb(226, 192, 0);
-  box-shadow: 0 0 5px rgb(226, 192, 0), 0 0 15px rgb(226, 192, 0),
-    0 0 30px rgb(226, 192, 0), 0 0 60px rgb(226, 192, 0);
+  background: rgb(226, 192, 0); /* Background color */
+  box-shadow: 0 0 5px rgb(226, 192, 0), /* Box shadow */
+    0 0 15px rgb(226, 192, 0), /* Box shadow */
+    0 0 30px rgb(226, 192, 0), /* Box shadow */
+    0 0 60px rgb(226, 192, 0); /* Box shadow */
 }
 
 @media only screen and (max-width: 768px) {
+  /* Body Slide adjustments */
   .body-slide {
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 90%;
-    height: fit-content;
-    padding: 4rem 0 1rem 1rem;
+    flex-direction: column; /* Change to column layout */
+    flex-wrap: wrap; /* Wrap items */
+    width: 90%; /* 90% width of the container */
+    height: fit-content; /* Adjust height to fit content */
+    padding: 4rem 0 1rem 1rem; /* Padding adjustments */
   }
 
+  /* Slide Content adjustments */
   .slide-content {
-    width: 100%;
-    gap: 1rem;
+    width: 100%; /* Full width */
+    gap: 1rem; /* Gap between elements */
   }
 
+  /* Title adjustments */
   .title {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 3.2rem;
-    color: rgba(231, 231, 231, 0.812);
-    padding-right: 1rem;
+    font-size: 3rem; /* Font size adjustment */
+    font-weight: 800; /* Font weight adjustment */
+    line-height: 3.2rem; /* Line height adjustment */
+    color: rgba(231, 231, 231, 0.812); /* Text color adjustment */
+    padding-right: 1rem; /* Right padding adjustment */
   }
 
+  /* Button adjustments */
   .btn {
-    position: relative;
+    position: relative; /* Relative positioning */
     top: 0;
     left: 0;
-    width: 250px;
-    height: 50px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
+    width: 250px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    margin: 0; /* Margin reset */
+    display: flex; /* Flex display */
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    border: none; /* No border */
   }
 
+  /* Button link adjustments */
   .btn a {
-    position: absolute;
+    position: absolute; /* Absolute positioning */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    font-size: 1rem;
-    justify-content: center;
-    align-items: center;
-    background: #333;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.613);
-    border-bottom: 1px solid rgba(3, 3, 3, 0.839);
-    border-top: 1px solid rgba(0, 0, 0, 1);
-    border-radius: 30px;
-    padding: 1px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    overflow: hidden;
-    color: #fff;
-    font-weight: bolder;
-    z-index: 1;
-    transition: 0.5s;
-    backdrop-filter: blur(15px);
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex; /* Flex display */
+    font-size: 1rem; /* Font size */
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    background: #333; /* Dark background color */
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.613); /* Box shadow */
+    border-bottom: 1px solid rgba(3, 3, 3, 0.839); /* Border bottom */
+    border-top: 1px solid rgba(0, 0, 0, 1); /* Border top */
+    border-radius: 30px; /* Border radius */
+    padding: 1px; /* Padding */
+    letter-spacing: 1px; /* Letter spacing */
+    text-decoration: none; /* Text decoration */
+    overflow: hidden; /* Overflow */
+    color: #fff; /* Text color */
+    font-weight: bolder; /* Font weight */
+    z-index: 1; /* Z-index */
+    transition: 0.5s; /* Transition */
+    backdrop-filter: blur(15px); /* Backdrop filter */
   }
 
+  /* Button link hover adjustments */
   .btn:hover a {
-    letter-spacing: 3px;
+    letter-spacing: 3px; /* Increased letter spacing on hover */
   }
 
+  /* Button link hover before pseudo-element adjustments */
   .btn:hover a::before {
-    transform: skewX(45deg) translate(200px);
+    transform: skewX(45deg) translate(200px); /* Skew transformation on hover */
   }
 
+  /* Button before pseudo-element adjustments */
   .btn::before {
     content: "";
     position: absolute;
@@ -281,19 +312,21 @@
     bottom: -5px;
     width: 30px;
     height: 10px;
-    background: rgb(226, 192, 0);
-    border-radius: 10px;
-    transition: 0.5s;
-    transition-delay: 0.5s;
+    background: rgb(226, 192, 0); /* Background color */
+    border-radius: 10px; /* Border radius */
+    transition: 0.5s; /* Transition */
+    transition-delay: 0.5s; /* Transition delay */
   }
 
+  /* Button hover before pseudo-element adjustments */
   .btn:hover::before {
     bottom: 0;
     height: 50%;
     width: 80%;
-    border-radius: 30px;
+    border-radius: 30px; /* Border radius on hover */
   }
 
+  /* Button after pseudo-element adjustments */
   .btn::after {
     content: "";
     position: absolute;
@@ -302,41 +335,48 @@
     top: -5px;
     width: 30px;
     height: 10px;
-    background: rgb(226, 192, 0);
-    border-radius: 10px;
-    transition: 0.5s;
-    transition-delay: 0.5s;
+    background: rgb(226, 192, 0); /* Background color */
+    border-radius: 10px; /* Border radius */
+    transition: 0.5s; /* Transition */
+    transition-delay: 0.5s; /* Transition delay */
   }
 
+  /* Button hover after pseudo-element adjustments */
   .btn:hover::after {
     top: 0;
     height: 50%;
     width: 80%;
-    border-radius: 30px;
+    border-radius: 30px; /* Border radius on hover */
   }
 
+  /* Button before and after pseudo-element shared adjustments */
   .btn::before,
   .btn::after {
-    background: rgb(226, 192, 0);
-    box-shadow: 0 0 5px rgb(226, 192, 0), 0 0 15px rgb(226, 192, 0),
-      0 0 30px rgb(226, 192, 0), 0 0 60px rgb(226, 192, 0);
+    background: rgb(226, 192, 0); /* Background color */
+    box-shadow: 0 0 5px rgb(226, 192, 0), /* Box shadow */
+      0 0 15px rgb(226, 192, 0), /* Box shadow */
+      0 0 30px rgb(226, 192, 0), /* Box shadow */
+      0 0 60px rgb(226, 192, 0); /* Box shadow */
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Body Slide adjustments */
   .body-slide {
-    width: 75%;
-    height: fit-content;
-    padding-bottom: 2rem;
-    gap: 1rem;
+    width: 75%; /* 75% width of the container */
+    height: fit-content; /* Adjust height to fit content */
+    padding-bottom: 2rem; /* Bottom padding adjustment */
+    gap: 1rem; /* Gap between elements */
   }
 
+  /* Slide Content adjustments */
   .slide-content {
-    flex: 50%;
-    gap: 1rem;
+    flex: 50%; /* Take 50% of the container width */
+    gap: 1rem; /* Gap between elements */
   }
 
+  /* Infographic adjustments */
   .infographic {
-    width: 85%;
+    width: 85%; /* 85% width of the infographic */
   }
 }
