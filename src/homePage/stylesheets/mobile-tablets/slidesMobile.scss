@@ -24,15 +24,18 @@
   border: solid 1px transparent;
   border-radius: 2em;
 
-  --gradient-border: conic-gradient(
-    from var(--border-angle),
-    transparent 0%,
-    #ffffff3a,
-    rgba(226, 192, 0, 0.26),
-    99%,
-    transparent
-  );
-  background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+  --gradient-border:
+    conic-gradient(
+      from var(--border-angle),
+      transparent 0%,
+      #ffffff3a,
+      rgba(226, 192, 0, 0.26),
+      99%,
+      transparent
+    );
+  background:
+    var(--main-bg) padding-box,
+    var(--gradient-border) border-box,
     var(--main-bg) border-box;
   background-position: center center;
   animation: bg-spin 3s linear infinite; /* Background rotation animation */
@@ -211,22 +214,23 @@
   transition-delay: 0.5s; /* Transition delay */
 }
 
+/* Button before and after pseudo-element shared styling */
+.btn::before,
+.btn::after {
+  background: rgb(226, 192, 0); /* Background color */
+  box-shadow:
+    0 0 5px rgb(226, 192, 0), /* Box shadow */
+    0 0 15px rgb(226, 192, 0), /* Box shadow */
+    0 0 30px rgb(226, 192, 0), /* Box shadow */
+    0 0 60px rgb(226, 192, 0); /* Box shadow */
+}
+
 /* Button hover after pseudo-element styling */
 .btn:hover::after {
   top: 0;
   height: 50%;
   width: 80%;
   border-radius: 30px; /* Border radius on hover */
-}
-
-/* Button before and after pseudo-element shared styling */
-.btn::before,
-.btn::after {
-  background: rgb(226, 192, 0); /* Background color */
-  box-shadow: 0 0 5px rgb(226, 192, 0), /* Box shadow */
-    0 0 15px rgb(226, 192, 0), /* Box shadow */
-    0 0 30px rgb(226, 192, 0), /* Box shadow */
-    0 0 60px rgb(226, 192, 0); /* Box shadow */
 }
 
 @media only screen and (max-width: 768px) {
