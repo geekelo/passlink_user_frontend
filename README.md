@@ -58,6 +58,9 @@ PassLink simplifies the event check-in process by leveraging modern web technolo
 
 ## 🛠 Built With <a name="built-with"></a>
 
+## File Structure
+![alt text](image-1.png)
+
 ### Tech Stack <a name="tech-stack"></a>
 
 PassLink utilizes a modern tech stack to ensure reliability, scalability, and performance. Some of the technologies and frameworks used in its development include:
@@ -125,7 +128,7 @@ Clone this repository to your desired folder:
 
 
 ```sh
-   git clone https://github.com/your-username/passlink.git
+   git clone https://github.com/geekelo/passlink.git
    cd passlink
 ```
 
@@ -135,10 +138,10 @@ Install dependencies for both the frontend and backend:
 
 
 ```sh
-  cd frontend
+  cd passlink_user_frontend
   npm install
 
-  cd ../backend
+  cd passlink_backend_api
   bundle install
 ```
 
