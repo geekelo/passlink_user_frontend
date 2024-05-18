@@ -1,6 +1,5 @@
 .body-slide {
   display: flex;
-  background-color: #0f0f0f;
   margin: auto;
   text-align: left;
   padding: 4rem 0 1rem 5rem;
@@ -10,16 +9,18 @@
   text-shadow: 0 1px 0 #000;
 
   --border-angle: 0turn;
-  --main-bg: conic-gradient(
-    from var(--border-angle),
-    #434343,
-    #434343 5%,
-    #434343 60%,
-    #434343 95%
-  );
+  --main-bg:
+    conic-gradient(
+      from var(--border-angle),
+      #434343,
+      #434343 5%,
+      #434343 60%,
+      #434343 95%
+    );
 
   border: solid 1px transparent;
   border-radius: 2em;
+
   --gradient-border: conic-gradient(
     from var(--border-angle),
     transparent 0%,
