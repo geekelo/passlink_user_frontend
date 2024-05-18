@@ -3,21 +3,21 @@
   background:
     conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0),
     conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(1 * 32px)
-      calc(3 * 32px),
+    calc(3 * 32px),
     conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(2 * 32px)
-      calc(1 * 32px),
+    calc(1 * 32px),
     conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(3 * 32px)
-      calc(4 * 32px),
+    calc(4 * 32px),
     conic-gradient(at 10% 50%, #0000 75%, #f7f7f7 0) calc(4 * 32px)
-      calc(2 * 32px),
+    calc(2 * 32px),
     conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) 0 calc(4 * 32px),
     conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(1 * 32px)
-      calc(2 * 32px),
+    calc(2 * 32px),
     conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(2 * 32px) 0,
     conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(3 * 32px)
-      calc(3 * 32px),
+    calc(3 * 32px),
     conic-gradient(at 50% 10%, #0000 75%, #f7f7f7 0) calc(4 * 32px)
-      calc(1 * 32px),
+    calc(1 * 32px),
     #fff;
   background-size: 160px 160px; /* Background size */
 }
@@ -27,7 +27,6 @@
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif; /* Font family */
-  background-color: #0f0f0f; /* Background color */
   margin: auto; /* Center align horizontally */
   text-align: left; /* Left align text */
   padding: 4rem 0 1rem 5rem; /* Padding */
@@ -49,19 +48,22 @@
   border: solid 1px transparent; /* Transparent border */
   border-radius: 2em; /* Border radius */
 
-  --gradient-border: conic-gradient(
-    from var(--border-angle),
-    transparent 0%,
-    #ffffff3a,
-    rgba(226, 192, 0, 0.26),
-    99%,
-    transparent
-  ); /* Gradient border */
+  --gradient-border:
+    conic-gradient(
+      from var(--border-angle),
+      transparent 0%,
+      #ffffff3a,
+      rgba(226, 192, 0, 0.26),
+      99%,
+      transparent
+    ); /* Gradient border */
 
   background:
     var(--main-bg) padding-box,
     var(--gradient-border) border-box,
     var(--main-bg) border-box; /* Combined background */
+
+  background-color: #0f0f0f; /* Background color */
   background-position: center center; /* Background position */
   animation: bg-spin 3s linear infinite; /* Background animation */
 }
