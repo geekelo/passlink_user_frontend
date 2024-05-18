@@ -91,6 +91,16 @@
     border-radius: 30px; /* Border radius on hover */
   }
 
+  /* Button before and after pseudo-element shared adjustments */
+  .btn::before,
+  .btn::after {
+    background: rgb(226, 192, 0); /* Background color */
+    box-shadow: 0 0 5px rgb(226, 192, 0),
+      /* Box shadow */ 0 0 15px rgb(226, 192, 0),
+      /* Box shadow */ 0 0 30px rgb(226, 192, 0),
+      /* Box shadow */ 0 0 60px rgb(226, 192, 0); /* Box shadow */
+  }
+
   /* Button before pseudo-element adjustments */
   .btn:hover::after {
     content: "";
@@ -115,20 +125,10 @@
     top: -5px;
     width: 30px;
     height: 10px;
-    background: rgb(226, 192, 0); /* Background color */
+    background-color: rgb(226, 192, 0); /* Background color */
     border-radius: 10px; /* Border radius */
     transition: 0.5s; /* Transition */
     transition-delay: 0.1s; /* Transition delay */
-  }
-
-  /* Button before and after pseudo-element shared adjustments */
-  .btn::before,
-  .btn::after {
-    background: rgb(226, 192, 0); /* Background color */
-    box-shadow: 0 0 5px rgb(226, 192, 0),
-      /* Box shadow */ 0 0 15px rgb(226, 192, 0),
-      /* Box shadow */ 0 0 30px rgb(226, 192, 0),
-      /* Box shadow */ 0 0 60px rgb(226, 192, 0); /* Box shadow */
   }
 }
 
