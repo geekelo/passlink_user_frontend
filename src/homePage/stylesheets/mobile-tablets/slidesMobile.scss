@@ -11,17 +11,19 @@
 
   /* Main background gradient */
   --border-angle: 0turn;
-  --main-bg: conic-gradient(
-    from var(--border-angle),
-    #434343,
-    #434343 5%,
-    #434343 60%,
-    #434343 95%
-  );
+  --main-bg:
+    conic-gradient(
+      from var(--border-angle),
+      #434343,
+      #434343 5%,
+      #434343 60%,
+      #434343 95%
+    );
 
   /* Gradient border */
   border: solid 1px transparent;
   border-radius: 2em;
+
   --gradient-border: conic-gradient(
     from var(--border-angle),
     transparent 0%,
@@ -49,6 +51,7 @@
   from {
     opacity: 0.1;
   }
+
   to {
     opacity: 1;
   }
@@ -318,14 +321,6 @@
     transition-delay: 0.5s; /* Transition delay */
   }
 
-  /* Button hover before pseudo-element adjustments */
-  .btn:hover::before {
-    bottom: 0;
-    height: 50%;
-    width: 80%;
-    border-radius: 30px; /* Border radius on hover */
-  }
-
   /* Button after pseudo-element adjustments */
   .btn::after {
     content: "";
@@ -341,22 +336,31 @@
     transition-delay: 0.5s; /* Transition delay */
   }
 
+  /* Button before and after pseudo-element shared adjustments */
+  .btn::before,
+  .btn::after {
+    background: rgb(226, 192, 0); /* Background color */
+    box-shadow:
+      0 0 5px rgb(226, 192, 0), /* Box shadow */
+      0 0 15px rgb(226, 192, 0), /* Box shadow */
+      0 0 30px rgb(226, 192, 0), /* Box shadow */
+      0 0 60px rgb(226, 192, 0); /* Box shadow */
+  }
+
+  /* Button hover before pseudo-element adjustments */
+  .btn:hover::before {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px; /* Border radius on hover */
+  }
+
   /* Button hover after pseudo-element adjustments */
   .btn:hover::after {
     top: 0;
     height: 50%;
     width: 80%;
     border-radius: 30px; /* Border radius on hover */
-  }
-
-  /* Button before and after pseudo-element shared adjustments */
-  .btn::before,
-  .btn::after {
-    background: rgb(226, 192, 0); /* Background color */
-    box-shadow: 0 0 5px rgb(226, 192, 0), /* Box shadow */
-      0 0 15px rgb(226, 192, 0), /* Box shadow */
-      0 0 30px rgb(226, 192, 0), /* Box shadow */
-      0 0 60px rgb(226, 192, 0); /* Box shadow */
   }
 }
 

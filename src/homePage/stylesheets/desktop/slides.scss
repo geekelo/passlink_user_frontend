@@ -12,8 +12,7 @@
 
   /* Custom properties for gradient angles */
   --border-angle: 0turn;
-
-  --main-bg: 
+  --main-bg:
     conic-gradient(
       from var(--border-angle),
       #434343,
@@ -35,6 +34,7 @@
       99%,
       transparent
     );
+
   background:
     var(--main-bg) padding-box,
     var(--gradient-border) border-box,
@@ -206,8 +206,11 @@
 .btn::before,
 .btn::after {
   background: rgb(226, 192, 0); /* Background color */
-  box-shadow: 0 0 5px rgb(226, 192, 0), 0 0 15px rgb(226, 192, 0),
-    0 0 30px rgb(226, 192, 0), 0 0 60px rgb(226, 192, 0); /* Box shadow */
+  box-shadow:
+    0 0 5px rgb(226, 192, 0),
+    0 0 15px rgb(226, 192, 0),
+    0 0 30px rgb(226, 192, 0),
+    0 0 60px rgb(226, 192, 0); /* Box shadow */
 }
 
 /* Hover state for the pseudo-element before */
