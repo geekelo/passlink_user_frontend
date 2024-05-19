@@ -59,56 +59,7 @@ PassLink simplifies the event check-in process by leveraging modern web technolo
 ## 🛠 Built With <a name="built-with"></a>
 
 ## File Structure
-PassLink/
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── assets/
-│   │   ├── infographic1.png
-│   │   ├── infographic2.png
-│   │   └── passlink.png
-│   ├── components/
-│   │   ├── InfoNav.js
-│   │   ├── CopyButton.js
-│   │   ├── NavSection.js
-│   │   ├── LandingSection.js
-│   │   ├── SlideOne.js
-│   │   ├── SlideTwo.js
-│   │   └── ...
-│   ├── data/
-│   │   └── datalist.json
-│   ├── homePage/
-│   │   ├── javascripts/
-│   │   │   ├── navsection.js
-│   │   │   ├── landingsection.js
-│   │   │   ├── footersection.js
-│   │   │   └── infosection.js
-│   │   └── stylesheets/
-│   │       ├── desktop/
-│   │       │   ├── infonav.css
-│   │       │   ├── bodysection.css
-│   │       │   ├── slides.scss
-│   │       │   ├── arrows.scss
-│   │       │   └── navsection.css
-│   │       ├── mobile-tablets/
-│   │       │   └── navsectionMobile.css
-│   │       └── ...
-│   ├── __tests__/
-│   │   ├── InfoNav.test.js
-│   │   ├── CopyButton.test.js
-│   │   ├── NavSection.test.js
-│   │   ├── LandingSection.test.js
-│   │   ├── SlideOne.test.js
-│   │   ├── SlideTwo.test.js
-│   │   └── ...
-│   ├── App.js
-│   ├── index.js
-│   └── ...
-├── package.json
-├── package-lock.json
-├── README.md
-└── ...
+![alt text](image-2.png)
 
 
 ### Tech Stack <a name="tech-stack"></a>
