@@ -35,7 +35,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 PassLink <a name="about-project"></a>
+# 📖 PassLink Landing Page/Area <a name="about-project"></a>
 
 
 "**PassLink** is an event check-in application built with React on the frontend and Ruby on Rails for the backend. It is designed to streamline the event check-in process, providing organizers and attendees with a seamless and efficient experience. Below, I'll outline the key aspects of PassLink, including its description, tech stack, development process, features, and how event check-ins are managed."
