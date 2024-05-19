@@ -1,38 +1,42 @@
+/* Styling for the App container */
 .App {
-  text-align: center;
+  display: flex; /* Flex container */
+  flex-direction: column; /* Column direction */
+  gap: 50px; /* Gap between children */
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif; /* Font family */
+  -webkit-font-smoothing: antialiased; /* Font smoothing for WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Font smoothing for Firefox */
+  margin: 0; /* Margin */
+  background:
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(1 * 31px) calc(3 * 31px),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(2 * 31px) calc(1 * 31px),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(3 * 31px) calc(4 * 31px),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(4 * 31px) calc(2 * 31px),
+    conic-gradient(at 50% 10%, #0000 75%, #121212 0) 0 calc(4 * 31px),
+    conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(1 * 31px) calc(2 * 31px),
+    conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(2 * 31px) 0,
+    conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(3 * 31px) calc(3 * 31px),
+    conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(4 * 31px) calc(1 * 31px),
+    #0f0f0f; /* Background gradient */
+
+  background-size: 155px 155px; /* Background size */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling for links */
+.links {
+  text-decoration: none; /* No text decoration */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Active state for links */
+.links.active {
+  color: rgb(197, 168, 1); /* Active link color */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hover effect for links */
+.links:hover {
+  color: rgb(197, 168, 1); /* Link color on hover */
+  transition-property: color; /* Transition property */
+  transition-duration: 0.3s; /* Transition duration */
+  transition-delay: 0.1s; /* Transition delay */
 }

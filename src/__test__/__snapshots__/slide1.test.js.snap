@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders SlideOne correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="body-slide"
+  >
+    <div
+      class="slide-content"
+    >
+      <h1
+        class="title"
+      >
+        Find online & onsite events on PassLink
+      </h1>
+      <div
+        class="ticks-cta-section"
+      >
+        <div
+          class="ticks-section"
+        >
+          <p>
+            <span
+              class="ticks"
+            >
+              ✔
+            </span>
+            <span>
+              Enhance your knowledge, skills, and career prospects
+            </span>
+          </p>
+          <p>
+            <span
+              class="ticks"
+            >
+              ✔
+            </span>
+            <span>
+              Participate in celebrations & social gatherings
+            </span>
+          </p>
+          <p>
+            <span
+              class="ticks"
+            >
+              ✔
+            </span>
+            <span>
+              Engage extensive collection of religious events
+            </span>
+          </p>
+          <p>
+            <span
+              class="ticks"
+            >
+              ✔
+            </span>
+            <span>
+              Access mentorship sessions & programs
+            </span>
+          </p>
+        </div>
+        <button
+          class="btn"
+          type="submit"
+        >
+          <a
+            href="v.com"
+          >
+            <span>
+              FIND EVENTS  
+            </span>
+            <i
+              class="material-icons"
+            >
+              travel_explore
+            </i>
+          </a>
+        </button>
+      </div>
+    </div>
+    <div
+      class="infographic-section"
+    >
+      <img
+        alt="infographic"
+        class="infographic"
+        src="infographic1.png"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,66 @@
+/* Styling for the infoNav section */
+.infoNav-section {
+  display: flex; /* Flex container */
+  justify-content: space-between; /* Space between items */
+  width: 100%; /* Full width */
+}
+
+/* Styling for the dropdown section */
+.dropdown-section {
+  position: absolute; /* Absolute positioning */
+  display: flex; /* Flex container */
+  flex-direction: column; /* Column direction */
+  font-family: "Roboto", sans-serif; /* Font family */
+  background-color: rgb(224, 224, 224); /* Background color */
+  right: 10%; /* Right position */
+}
+
+/* Styling for the infoNav icons */
+.infonav-icons {
+  color: #fff; /* Text color */
+  font-size: 1.8rem; /* Font size */
+}
+
+/* Styling for the infoNav button */
+.infonav-btn {
+  background-color: rgba(19, 19, 19, 0); /* Transparent background */
+  border: none; /* No border */
+}
+
+/* Styling for the infoNav links */
+.infonav-links {
+  display: flex; /* Flex container */
+  color: #131313; /* Text color */
+  padding: 0.5rem 1.5rem; /* Padding */
+  background-color: rgb(197, 168, 1); /* Background color */
+  border-bottom: 1px solid #13131349; /* Bottom border */
+}
+
+/* Hover effect for infoNav links */
+.infonav-links:hover {
+  background-color: #131313; /* Background color on hover */
+  color: hsl(0, 0%, 100%); /* Text color on hover */
+  transition-property: background-color, color; /* Transition properties */
+  transition-duration: 0.4s; /* Transition duration */
+  transition-delay: 0.1s; /* Transition delay */
+}
+
+/* Active state for infoNav links */
+.infonav-links.active {
+  background-color: #131313; /* Background color for active state */
+}
+
+/* CSS classes for show and hide transitions */
+.show {
+  display: flex; /* Display flex */
+  transition-property: display; /* Transition property */
+  transition-duration: 2s; /* Transition duration */
+  transition-delay: 1s; /* Transition delay */
+}
+
+.hide {
+  display: none; /* Display none */
+  transition-property: display; /* Transition property */
+  transition-duration: 2s; /* Transition duration */
+  transition-delay: 0.9s; /* Transition delay */
+}

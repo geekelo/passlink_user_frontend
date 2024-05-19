@@ -1,0 +1,14 @@
+/* Styling for the main body section */
+.body-section {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  gap: 0; /* No gap between children */
+  margin-top: 10vh; /* Top margin of 10% viewport height */
+}
+
+/* Styling for the arrow button section */
+.arrow-section {
+  display: flex; /* Use flexbox for layout */
+  gap: 0; /* No gap between children */
+  justify-content: center; /* Center align children horizontally */
+}

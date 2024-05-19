@@ -1,0 +1,25 @@
+@media only screen and (max-width: 768px) {
+  /* Adjustments for screens up to 768px width */
+  .info-section {
+    padding: 2rem 1rem; /* Padding adjustments */
+    text-align: left; /* Text alignment */
+  }
+
+  .content-title {
+    padding-top: 2rem; /* Top padding adjustment */
+    font-size: 2rem; /* Font size adjustment */
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Adjustments for screens between 769px and 1024px width */
+  .info-section {
+    padding: 2rem 1rem; /* Padding adjustments */
+    text-align: left; /* Text alignment */
+  }
+
+  .content-title {
+    padding-top: 2rem; /* Top padding adjustment */
+    font-size: 3rem; /* Font size adjustment */
+  }
+}

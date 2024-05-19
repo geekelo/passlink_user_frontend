@@ -1,0 +1,437 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="navsection"
+    >
+      <a
+        aria-current="page"
+        class="logoSection active"
+        href="/"
+      >
+        <img
+          alt="logo"
+          class="logo"
+          src="passlink.png"
+        />
+      </a>
+      <div
+        class="menuSection"
+      >
+        <section
+          class="menuItemsSection"
+        >
+          <a
+            class="menuLinks"
+            href="v.com"
+          >
+            <span
+              class="registered-events"
+            >
+              Registered Events
+            </span>
+             
+            <i
+              class="material-icons registered-events-icon"
+            >
+              event_available
+            </i>
+          </a>
+        </section>
+      </div>
+    </div>
+    <div
+      class="body-section"
+    >
+      <div
+        class="arrow-section"
+      >
+        <button
+          aria-label="Previous Button"
+          class="arrow"
+          type="button"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+            />
+          </svg>
+        </button>
+        <button
+          aria-label="Next Button"
+          class="arrow active-arrow"
+          type="button"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="body-slide"
+      >
+        <div
+          class="slide-content"
+        >
+          <h1
+            class="title"
+          >
+            Find online & onsite events on PassLink
+          </h1>
+          <div
+            class="ticks-cta-section"
+          >
+            <div
+              class="ticks-section"
+            >
+              <p>
+                <span
+                  class="ticks"
+                >
+                  ✔
+                </span>
+                <span>
+                  Enhance your knowledge, skills, and career prospects
+                </span>
+              </p>
+              <p>
+                <span
+                  class="ticks"
+                >
+                  ✔
+                </span>
+                <span>
+                  Participate in celebrations & social gatherings
+                </span>
+              </p>
+              <p>
+                <span
+                  class="ticks"
+                >
+                  ✔
+                </span>
+                <span>
+                  Engage extensive collection of religious events
+                </span>
+              </p>
+              <p>
+                <span
+                  class="ticks"
+                >
+                  ✔
+                </span>
+                <span>
+                  Access mentorship sessions & programs
+                </span>
+              </p>
+            </div>
+            <button
+              class="btn"
+              type="submit"
+            >
+              <a
+                href="v.com"
+              >
+                <span>
+                  FIND EVENTS  
+                </span>
+                <i
+                  class="material-icons"
+                >
+                  travel_explore
+                </i>
+              </a>
+            </button>
+          </div>
+        </div>
+        <div
+          class="infographic-section"
+        >
+          <img
+            alt="infographic"
+            class="infographic"
+            src="infographic1.png"
+          />
+        </div>
+      </div>
+    </div>
+    <footer
+      class="site-footer"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="column-one-text"
+          >
+            <h6>
+              Guests
+            </h6>
+            <p
+              class="text-justify"
+            >
+              With PassLink, guests no longer need to create accounts or fill out lengthy registration forms. Instead, they can simply present a passcode—generated upon registration—at the event, whether it's online or onsite.
+            </p>
+          </div>
+          <div
+            class="column-one-text"
+          >
+            <h6>
+              Organizers
+            </h6>
+            <p
+              class="text-justify"
+            >
+              From tracking registered guests and attendance to analyzing data and generating insightful reports, PassLink empowers organizers to make informed decisions and optimize their events for success.
+            </p>
+          </div>
+          <div
+            class="column-one-link"
+          >
+            <h6>
+              Quick Links
+            </h6>
+            <ul
+              class="footer-links"
+            >
+              <li>
+                <a
+                  class="links"
+                  href="/about"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  class="links"
+                  href="/contact"
+                >
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  class="links"
+                  href="/features"
+                >
+                  Features
+                </a>
+              </li>
+              <li>
+                <a
+                  class="links"
+                  href="/privacy-policy"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  class="links"
+                  href="/faqs"
+                >
+                  Help | FAQs
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div
+        class="container"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="column-two"
+          >
+            <div>
+              <img
+                alt="logo"
+                class="footerlogo"
+                src="footerlogo.png"
+              />
+              <p
+                class="copyright-text"
+              >
+                Copyright © 2024 All Rights Reserved by  
+                <a
+                  href="https://geekelo.com.ng"
+                >
+                  Eloghene Otiede.
+                </a>
+              </p>
+            </div>
+          </div>
+          <div
+            class="column-two"
+          >
+            <div
+              class="social-icons"
+            >
+              <p>
+                Connect with Developer:
+              </p>
+              <ul
+                class="social-icons"
+              >
+                <li>
+                  <a
+                    aria-label="LinkedIn"
+                    class="linkedin"
+                    href="https://linkedin.com/in/eloghene-otiede"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-linkedin "
+                      data-icon="linkedin"
+                      data-prefix="fab"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="YouTube"
+                    class="email"
+                    href="https://youtube.com/@geekelo"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-youtube "
+                      data-icon="youtube"
+                      data-prefix="fab"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="Twitter"
+                    class="twitter"
+                    href="https://x.com/geekelo_xyz"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-twitter "
+                      data-icon="twitter"
+                      data-prefix="fab"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="Website"
+                    class="globe"
+                    href="https://geekelo.com.ng"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-globe "
+                      data-icon="globe"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="Email"
+                    class="facebook"
+                    href="mailto:efuelight12@gmail.com"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-envelope "
+                      data-icon="envelope"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</DocumentFragment>
+`;

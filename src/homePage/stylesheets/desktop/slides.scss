@@ -1,0 +1,229 @@
+/* Styling for the body-slide container */
+.body-slide {
+  display: flex;
+  margin: auto; /* Center align horizontally */
+  text-align: left; /* Align text to the left */
+  padding: 4rem 0 1rem 5rem; /* Padding */
+  width: 60%; /* Width */
+  height: 50vmin; /* Height relative to viewport */
+  color: white; /* Text color */
+  text-shadow: 0 1px 0 #000; /* Text shadow */
+
+  /* Custom properties for gradient angles */
+  --border-angle: 0turn;
+  --main-bg:
+    conic-gradient(
+      from var(--border-angle),
+      #434343,
+      #434343 5%,
+      #434343 60%,
+      #434343 95%
+    );
+
+  /* Border and gradient background */
+  border: solid 1px transparent;
+  border-radius: 2em;
+
+  --gradient-border:
+    conic-gradient(
+      from var(--border-angle),
+      transparent 0%,
+      #ffffff3a,
+      rgba(226, 192, 0, 0.26),
+      99%,
+      transparent
+    );
+
+  background:
+    var(--main-bg) padding-box,
+    var(--gradient-border) border-box,
+    var(--main-bg) border-box;
+  background-position: center center;
+  animation: bg-spin 3s linear infinite, fadeIn 3s; /* Animations */
+}
+
+/* Keyframes for the background spin animation */
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Custom property for border angle */
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+/* Styling for slide content */
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  flex: 70%; /* 70% of the container width */
+  gap: 1rem; /* Gap between child elements */
+}
+
+/* Styling for the title */
+.title {
+  font-family: "Lato", sans-serif;
+  font-size: 3.5rem; /* Font size */
+  font-weight: 800; /* Font weight */
+  padding: 0; /* Padding */
+  margin: 0; /* Margin */
+  line-height: 3.5rem; /* Line height */
+  color: rgba(231, 231, 231, 0.812); /* Text color with opacity */
+}
+
+/* Styling for the ticks-cta-section */
+.ticks-cta-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Gap between child elements */
+}
+
+/* Styling for the ticks-section */
+.ticks-section {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem; /* Font size */
+  display: flex;
+  flex-direction: column;
+  gap: 1px; /* Gap between child elements */
+}
+
+/* Styling for the ticks-section paragraphs */
+.ticks-section p {
+  color: rgba(231, 231, 231, 0.682); /* Text color with opacity */
+  margin: 0; /* Margin */
+}
+
+/* Styling for the ticks */
+.ticks {
+  color: rgba(226, 192, 0, 0.839); /* Yellow text color with opacity */
+}
+
+/* Styling for the infographic-section */
+.infographic-section {
+  display: flex;
+  flex: 20%; /* 20% of the container width */
+}
+
+/* Styling for the infographic */
+.infographic {
+  width: 70%; /* Width */
+}
+
+/* Styling for the button */
+.btn {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 250px; /* Width */
+  height: 50px; /* Height */
+  margin: 0; /* Margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+  border: none; /* No border */
+}
+
+/* Styling for the button link */
+.btn a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Width */
+  height: 100%; /* Height */
+  display: flex;
+  font-size: 1rem; /* Font size */
+  justify-content: center;
+  align-items: center;
+  background: #333; /* Background color */
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.613); /* Box shadow */
+  border-bottom: 1px solid rgba(3, 3, 3, 0.839); /* Border bottom */
+  border-top: 1px solid rgba(0, 0, 0, 1); /* Border top */
+  border-radius: 30px; /* Border radius */
+  padding: 1px; /* Padding */
+  letter-spacing: 1px; /* Letter spacing */
+  text-decoration: none; /* No underline */
+  overflow: hidden;
+  color: #fff; /* Text color */
+  font-weight: bolder; /* Font weight */
+  z-index: 1; /* Z-index */
+  transition: 0.5; /* Transition duration */
+  backdrop-filter: blur(15px); /* Background filter */
+}
+
+/* Hover state for the button link */
+.btn:hover a {
+  letter-spacing: 3px; /* Increased letter spacing on hover */
+}
+
+/* Pseudo-element after the button */
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 30px; /* Width */
+  height: 10px; /* Height */
+  background: rgb(226, 192, 0); /* Background color */
+  border-radius: 10px; /* Border radius */
+  transition: 0.5s; /* Transition duration */
+  transition-delay: 0.1s; /* Delay for transition */
+}
+
+/* Pseudo-element before the button */
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  width: 30px; /* Width */
+  height: 10px; /* Height */
+  background: rgb(226, 192, 0); /* Background color */
+  border-radius: 10px; /* Border radius */
+  transition: 0.5s; /* Transition duration */
+  transition-delay: 0.1s; /* Delay for transition */
+}
+
+/* Styling for pseudo-elements before and after */
+.btn::before,
+.btn::after {
+  background: rgb(226, 192, 0); /* Background color */
+  box-shadow:
+    0 0 5px rgb(226, 192, 0),
+    0 0 15px rgb(226, 192, 0),
+    0 0 30px rgb(226, 192, 0),
+    0 0 60px rgb(226, 192, 0); /* Box shadow */
+}
+
+/* Hover state for the pseudo-element after */
+.btn:hover::after {
+  bottom: 0;
+  height: 50%; /* Height */
+  width: 80%; /* Width */
+  border-radius: 30px; /* Border radius */
+}
+
+/* Hover state for the pseudo-element before */
+.btn:hover::before {
+  top: 0;
+  height: 50%; /* Height */
+  width: 80%; /* Width */
+  border-radius: 30px; /* Border radius */
+}

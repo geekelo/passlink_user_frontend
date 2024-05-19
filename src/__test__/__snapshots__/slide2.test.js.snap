@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders SlideTwo correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="body-slide"
+  >
+    <div
+      class="slide-content"
+    >
+      <h1
+        class="title"
+      >
+        An effective event management portal.
+      </h1>
+      <div
+        class="ticks-cta-section"
+      >
+        <div
+          class="ticks-section"
+        >
+          <p>
+            <span
+              class="ticks"
+            >
+              ✔
+            </span>
+            <span>
+              Get insights and analytics on event attendees
+            </span>
+          </p>
+          <p>
+            <span
+              class="ticks"
+            >
+              ✔
+            </span>
+            <span>
+              Get feedback on your private and public events
+            </span>
+          </p>
+          <p>
+            <span
+              class="ticks"
+            >
+              ✔
+            </span>
+            <span>
+              Let others know about your events & Limit access to registered attendees
+            </span>
+          </p>
+          <p>
+            <span
+              class="ticks"
+            >
+              ✔
+            </span>
+            <span>
+              Send reminders to registered attendees
+            </span>
+          </p>
+        </div>
+        <button
+          class="btn"
+          type="submit"
+        >
+          <a
+            href="v.com"
+          >
+            <span>
+              ADD EVENT  
+            </span>
+            <i
+              class="material-icons"
+            >
+              event
+            </i>
+          </a>
+        </button>
+      </div>
+    </div>
+    <div
+      class="infographic-section"
+    >
+      <img
+        alt="infographic"
+        class="infographic"
+        src="infographic2.png"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

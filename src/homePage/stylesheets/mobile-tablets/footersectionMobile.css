@@ -1,0 +1,38 @@
+/* Media query for screens up to 991px width */
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px; /* Add bottom margin to all columns in site-footer */
+  }
+}
+
+/* Media query for screens up to 768px width */
+@media (max-width: 768px) {
+  .site-footer {
+    padding-bottom: 1.5rem; /* Adjust bottom padding of site-footer */
+  }
+
+  .footerlogo {
+    display: block;
+    margin: auto; /* Center align the footer logo */
+  }
+
+  .row {
+    flex-direction: column; /* Change flex direction of row to column */
+  }
+
+  .column-one-text {
+    flex: 100%;
+    text-align: left; /* Make column-one-text full width and align text left */
+  }
+
+  .social-icons li.title {
+    display: block;
+    margin-right: 0; /* Display social icons title as block and remove margin right */
+    font-weight: 600; /* Adjust font weight of social icons title */
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center; /* Center align copyright text and social icons */
+  }
+}
