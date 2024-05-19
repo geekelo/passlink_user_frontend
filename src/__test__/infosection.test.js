@@ -2,7 +2,6 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { BrowserRouter, useLocation } from 'react-router-dom';
 import InfoSection from '../homePage/javascripts/infosection';
-import data from '../homePage/data/datalist.json';
 
 // Mock useLocation to return a pathname for testing
 jest.mock('react-router-dom', () => ({
@@ -15,7 +14,7 @@ test('renders InfoSection component correctly for /about route', () => {
   const { asFragment } = render(
     <BrowserRouter>
       <InfoSection />
-    </BrowserRouter>
+    </BrowserRouter>,
   );
   expect(asFragment()).toMatchSnapshot();
 });
@@ -25,7 +24,7 @@ test('renders InfoSection component correctly for /contact route', () => {
   const { asFragment } = render(
     <BrowserRouter>
       <InfoSection />
-    </BrowserRouter>
+    </BrowserRouter>,
   );
   expect(asFragment()).toMatchSnapshot();
 });

@@ -10,7 +10,7 @@ test('renders InfoNav correctly', () => {
   const { asFragment } = render(
     <MemoryRouter>
       <InfoNav />
-    </MemoryRouter>
+    </MemoryRouter>,
   );
 
   // Initial render snapshot
@@ -22,7 +22,7 @@ test('InfoNav snapshot', () => {
   const tree = renderer.create(
     <MemoryRouter>
       <InfoNav />
-    </MemoryRouter>
+    </MemoryRouter>,
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });

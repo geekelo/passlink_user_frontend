@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import '../stylesheets/desktop/footersection.css';
 import '../stylesheets/mobile-tablets/footersectionMobile.css';
@@ -84,27 +84,27 @@ function FooterSection() {
               <p>Connect with Developer:</p>
               <ul className="social-icons">
                 <li>
-                  <a className="linkedin" href="https://linkedin.com" aria-label="LinkedIn">
+                  <a className="linkedin" href="https://linkedin.com/in/eloghene-otiede" aria-label="LinkedIn">
                     <FontAwesomeIcon icon={faLinkedin} />
                   </a>
                 </li>
                 <li>
-                  <a className="facebook" href="https://facebook.com" aria-label="Facebook">
-                    <FontAwesomeIcon icon={faFacebook} />
+                  <a className="email" href="https://youtube.com/@geekelo" aria-label="YouTube">
+                    <FontAwesomeIcon icon={faYoutube} />
                   </a>
                 </li>
                 <li>
-                  <a className="twitter" href="https://twitter.com" aria-label="Twitter">
+                  <a className="twitter" href="https://x.com/geekelo_xyz" aria-label="Twitter">
                     <FontAwesomeIcon icon={faTwitter} />
                   </a>
                 </li>
                 <li>
-                  <a className="globe" href="https://yourwebsite.com" aria-label="Website">
+                  <a className="globe" href="https://geekelo.com.ng" aria-label="Website">
                     <FontAwesomeIcon icon={faGlobe} />
                   </a>
                 </li>
                 <li>
-                  <a className="email" href="mailto:efuelight12@gmail.com" aria-label="Email">
+                  <a className="facebook" href="mailto:efuelight12@gmail.com" aria-label="Email">
                     <FontAwesomeIcon icon={faEnvelope} />
                   </a>
                 </li>

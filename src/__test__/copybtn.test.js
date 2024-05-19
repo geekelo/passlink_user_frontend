@@ -1,9 +1,9 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import CopyButton from '../homePage/javascripts/copybtn';
 
 test('renders CopyButton correctly', () => {
-  const { asFragment, getByText } = render(<CopyButton textToCopy="Test text" />);
+  const { asFragment } = render(<CopyButton textToCopy="Test text" />);
 
   // Initial render snapshot
   expect(asFragment()).toMatchSnapshot();

@@ -4,7 +4,7 @@ import App from '../App';
 
 test('renders App correctly', () => {
   const { asFragment } = render(
-    <App />
+    <App />,
   );
 
   // Initial render snapshot

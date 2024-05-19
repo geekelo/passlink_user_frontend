@@ -7,7 +7,7 @@ test('renders FooterSection component correctly', () => {
   const { asFragment } = render(
     <Router>
       <FooterSection />
-    </Router>
+    </Router>,
   );
   expect(asFragment()).toMatchSnapshot();
 });
